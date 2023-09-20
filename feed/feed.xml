@@ -23,4 +23,49 @@
 &lt;p&gt;See you&lt;/p&gt;
 </content>
 	</entry>
+	
+	<entry>
+		<title>Protoype Demo - Fat Astro</title>
+		<link href="https://rifai.github.io/blog/2021/0905-fat-astro/"/>
+		<updated>2020-07-04T00:00:00Z</updated>
+		<id>https://rifai.github.io/blog/2021/0905-fat-astro/</id>
+		<content type="html">&lt;p&gt;Three years ago, I made game demo called Fat Astro. About astronaut who are fat. Duh. It&#39;s a 3d puzzle game. Inspired by BOXBOY! but in 3D.&lt;/p&gt;
+&lt;p&gt;http://www.youtube.com/watch?v=BqUYrAIIiYA&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>SocketException: OS Error: Connection refused, errno = 111</title>
+		<link href="https://rifai.github.io/blog/2020/0704-connection-refused-errno-111/"/>
+		<updated>2020-07-04T00:00:00Z</updated>
+		<id>https://rifai.github.io/blog/2020/0704-connection-refused-errno-111/</id>
+		<content type="html">&lt;p&gt;I encountered a peculiar error while developing a Flutter app on Windows. I had configured my local Apache server as the API server. When I tested the API using Postman, everything worked fine. However, the error surfaced when I tested the API within the app using an emulator.&lt;/p&gt;
+&lt;p&gt;As it turns out, the problem was with the emulator itself. Android emulators cannot communicate with &lt;strong&gt;127.0.0.1&lt;/strong&gt; or &lt;strong&gt;localhost&lt;/strong&gt;. The solution was straightforward: I replaced localhost with &lt;strong&gt;10.0.2.2&lt;/strong&gt;. This IP address serves as a special alias to your host loopback interface.&lt;/p&gt;
+&lt;p&gt;For more details, you can refer to &lt;a href=&quot;https://developer.android.com/studio/run/emulator-networking&quot;&gt;this docs&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Snap vector direction to nearest axis.</title>
+		<link href="https://rifai.github.io/blog/2018/0425-snap-vector-direction-to-nearest-axis/"/>
+		<updated>2018-04-25T00:00:00Z</updated>
+		<id>https://rifai.github.io/blog/2018/0425-snap-vector-direction-to-nearest-axis/</id>
+		<content type="html">&lt;p&gt;I have a case where I need to snap my character&#39;s direction to the nearest axis. It looks something like this.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/iTCZXET.gif&quot; alt=&quot;Imgur&quot;&gt;&lt;/p&gt;
+&lt;p&gt;My solution is to identify the axis with the largest absolute value, set it to 1, and set the other axes to 0. I also retain the sign of the largest axis.&lt;/p&gt;
+&lt;p&gt;Example, we have &lt;strong&gt;Vector3(-0.5f, 0.1f, 0)&lt;/strong&gt;. The snapped direction is Vector3(-1,0,0).&lt;/p&gt;
+&lt;pre class=&quot;language-csharp&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-csharp&quot;&gt;&lt;span class=&quot;token return-type class-name&quot;&gt;Vector3&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;SnappedToNearestAxis&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Vector3&lt;/span&gt; direction&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;float&lt;/span&gt;&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Abs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;direction&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;float&lt;/span&gt;&lt;/span&gt; y &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Abs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;direction&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;y&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;float&lt;/span&gt;&lt;/span&gt; z &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Abs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;direction&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;z&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;x &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; y &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&lt;/span&gt;amp&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;amp;&lt;/span&gt;amp&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; z&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Vector3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Sign&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;direction&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;y &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; y &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; z&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Vector3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Sign&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;direction&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;y&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Vector3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Sign&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;direction&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;z&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+</content>
+	</entry>
 </feed>

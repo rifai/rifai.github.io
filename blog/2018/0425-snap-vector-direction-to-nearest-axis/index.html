@@ -13,8 +13,8 @@
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Hello world.</title>
-		<meta name="description" content="My yet another blog.">
+		<title>Snap vector direction to nearest axis.</title>
+		<meta name="description" content="I have this case when I need to get my character direction is snapped to the nearest axis.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Rifai&#39;s blog">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Rifai&#39;s blog">
 		<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
@@ -476,25 +476,37 @@ h2 + .header-anchor {
 
 		<main id="skip">
 			
-<h1>Hello world.</h1>
+<h1>Snap vector direction to nearest axis.</h1>
 
 <ul class="post-metadata">
-	<li><time datetime="2023-09-21">21 September 2023</time></li>
+	<li><time datetime="2018-04-25">25 April 2018</time></li>
+	<li><a href="/tags/gamedev/" class="post-tag">gamedev</a></li>
 </ul>
 
-<p>Well, this is my first post on my new blog. I never thought I'd be blogging on github, and now here we are.</p>
-<p>This blog is hosted using <a href="https://pages.github.com/">Github Pages</a> and built with <a href="https://www.11ty.dev/">Eleventy</a>. It differs from traditional blogs like WordPress or Blogger because GitHub Pages is a static web hosting platform. As a result, there are no databases or interactive features.</p>
-<p>With the advent of static site generators, it is now possible to create a blogging website hosted on static web hosting. Github has its native support for static site generator with Jekyll. But I decided to use Eleventy instead.</p>
-<p>I'll be posting everything about programming and technology here. Hopefully, I can overcome procrastination and start blogging again.</p>
-<p>See you</p>
+<p>I have a case where I need to snap my character's direction to the nearest axis. It looks something like this.</p>
+<p><img src="https://i.imgur.com/iTCZXET.gif" alt="Imgur"></p>
+<p>My solution is to identify the axis with the largest absolute value, set it to 1, and set the other axes to 0. I also retain the sign of the largest axis.</p>
+<p>Example, we have <strong>Vector3(-0.5f, 0.1f, 0)</strong>. The snapped direction is Vector3(-1,0,0).</p>
+<pre class="language-csharp" tabindex="0"><code class="language-csharp"><span class="token return-type class-name">Vector3</span> <span class="token function">SnappedToNearestAxis</span><span class="token punctuation">(</span><span class="token class-name">Vector3</span> direction<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token class-name"><span class="token keyword">float</span></span> x <span class="token operator">=</span> <span class="token function">Abs</span><span class="token punctuation">(</span>direction<span class="token punctuation">.</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name"><span class="token keyword">float</span></span> y <span class="token operator">=</span> <span class="token function">Abs</span><span class="token punctuation">(</span>direction<span class="token punctuation">.</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name"><span class="token keyword">float</span></span> z <span class="token operator">=</span> <span class="token function">Abs</span><span class="token punctuation">(</span>direction<span class="token punctuation">.</span>z<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">></span> y <span class="token operator">&amp;</span>amp<span class="token punctuation">;</span><span class="token operator">&amp;</span>amp<span class="token punctuation">;</span> x <span class="token operator">></span> z<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">Vector3</span><span class="token punctuation">(</span><span class="token function">Sign</span><span class="token punctuation">(</span>direction<span class="token punctuation">.</span>x<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>y <span class="token operator">></span> x <span class="token operator">&amp;&amp;</span> y <span class="token operator">></span> z<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">Vector3</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token function">Sign</span><span class="token punctuation">(</span>direction<span class="token punctuation">.</span>y<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">Vector3</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token function">Sign</span><span class="token punctuation">(</span>direction<span class="token punctuation">.</span>z<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
 
-<ul class="links-nextprev"><li>Previous: <a href="/blog/2021/0905-fat-astro/">Protoype Demo - Fat Astro</a></li>
+<ul class="links-nextprev"><li>Next: <a href="/blog/2020/0704-connection-refused-errno-111/">SocketException: OS Error: Connection refused, errno = 111</a></li>
 </ul>
 
 		</main>
 
 		<footer></footer>
 
-		<!-- Current page: /blog/2023/0921-hello-world/ -->
+		<!-- Current page: /blog/2018/0425-snap-vector-direction-to-nearest-axis/ -->
 	</body>
 </html>

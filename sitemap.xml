@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
+		<loc>https://rifai.github.io/blog/2018/0425-snap-vector-direction-to-nearest-axis/</loc>
+		<lastmod>2018-04-25</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://rifai.github.io/blog/2020/0704-connection-refused-errno-111/</loc>
+		<lastmod>2020-07-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://rifai.github.io/blog/2021/0905-fat-astro/</loc>
+		<lastmod>2020-07-04</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://rifai.github.io/about/</loc>
 		<lastmod>2023-09-20</lastmod>
 	</url>
@@ -38,6 +53,16 @@
 	
 	<url>
 		<loc>https://rifai.github.io/tags/posts-with-two-tags/</loc>
+		<lastmod>2023-09-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://rifai.github.io/tags/gamedev/</loc>
+		<lastmod>2023-09-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://rifai.github.io/tags/android/</loc>
 		<lastmod>2023-09-20</lastmod>
 	</url>
 	

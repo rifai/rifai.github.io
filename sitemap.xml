@@ -2,67 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>https://rifai.github.io/blog/firstpost/</loc>
-		<lastmod>2018-05-01</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://rifai.github.io/blog/secondpost/</loc>
-		<lastmod>2018-07-04</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://rifai.github.io/blog/thirdpost/</loc>
-		<lastmod>2018-08-24</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://rifai.github.io/blog/fourthpost/</loc>
-		<lastmod>2018-09-30</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://rifai.github.io/about/</loc>
-		<lastmod>2023-09-19</lastmod>
+		<lastmod>2023-09-20</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.github.io/blog/</loc>
-		<lastmod>2023-09-19</lastmod>
+		<lastmod>2023-09-20</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.github.io/</loc>
-		<lastmod>2023-09-19</lastmod>
+		<lastmod>2023-09-20</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.github.io/tags/</loc>
-		<lastmod>2023-09-19</lastmod>
+		<lastmod>2023-09-20</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.github.io/tags/another-tag/</loc>
-		<lastmod>2023-09-19</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://rifai.github.io/tags/second-tag/</loc>
-		<lastmod>2023-09-19</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://rifai.github.io/tags/posts-with-two-tags/</loc>
-		<lastmod>2023-09-19</lastmod>
+		<lastmod>2023-09-20</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.github.io/tags/number-2/</loc>
-		<lastmod>2023-09-19</lastmod>
+		<lastmod>2023-09-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://rifai.github.io/tags/second-tag/</loc>
+		<lastmod>2023-09-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://rifai.github.io/tags/posts-with-two-tags/</loc>
+		<lastmod>2023-09-20</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.github.io/works/</loc>
-		<lastmod>2023-09-19</lastmod>
+		<lastmod>2023-09-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://rifai.github.io/blog/2023/0921-hello-world/</loc>
+		<lastmod>2023-09-21</lastmod>
 	</url>
 </urlset>

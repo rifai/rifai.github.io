@@ -114,6 +114,10 @@ p {
 	line-height: 1.5;
 }
 
+ul {
+	padding: 0;
+}
+
 li {
 	line-height: 1.5;
 }
@@ -230,14 +234,14 @@ header {
 	counter-increment: start-from -1;
 	margin-bottom: 1em;
 }
-.postlist-item:before {
+/* .postlist-item:before {
 	display: inline-block;
 	pointer-events: none;
 	content: "" counter(start-from, decimal-leading-zero) ". ";
 	line-height: 100%;
 	text-align: right;
 	margin-left: -1.5rem;
-}
+} */
 .postlist-date,
 .postlist-item:before {
 	font-size: 0.8125em; /* 13px /16 */
@@ -245,12 +249,25 @@ header {
 }
 .postlist-date {
 	word-spacing: -0.5px;
+	flex-basis: calc(100% - 1.5rem);
 }
+
+.postlist-article {
+	margin-bottom: 1.75em;
+	border-bottom: solid 1px #ddd;
+	padding-bottom: 1.75em;
+}
+
+.postlist-header {
+	padding: 0;
+	margin-bottom: 10px;
+}
+
 .postlist-link {
 	font-size: 1.1875em; /* 19px /16 */
 	font-weight: 700;
 	flex-basis: calc(100% - 1.5rem);
-	padding-left: .25em;
+	/* padding-left: .25em; */
 	padding-right: .5em;
 	text-underline-position: from-font;
 	text-underline-offset: 0;
@@ -320,6 +337,7 @@ h2 + .header-anchor {
 					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/blog/">Blog</a></li>
 					<li class="nav-item"><a href="/works/">Works</a></li>
+					<li class="nav-item"><a href="/games/">Games</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -344,6 +362,15 @@ h2 + .header-anchor {
 
 	
 	<li><a href="/tags/gamedev/" class="post-tag">gamedev</a></li>
+
+	
+	<li><a href="/tags/games/" class="post-tag">games</a></li>
+
+	
+	<li><a href="/tags/unity3d/" class="post-tag">unity3d</a></li>
+
+	
+	<li><a href="/tags/godot3d/" class="post-tag">godot3d</a></li>
 
 	
 	<li><a href="/tags/android/" class="post-tag">android</a></li>

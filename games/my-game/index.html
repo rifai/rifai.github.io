@@ -13,8 +13,8 @@
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Snap vector direction to nearest axis.</title>
-		<meta name="description" content="I have this case when I need to get my character direction is snapped to the nearest axis.">
+		<title>My game.</title>
+		<meta name="description" content="This is a post on My Blog about game.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Rifai&#39;s blog">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Rifai&#39;s blog">
 		<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
@@ -494,37 +494,35 @@ h2 + .header-anchor {
 
 		<main id="skip">
 			
-<h1>Snap vector direction to nearest axis.</h1>
+<h1>My game.</h1>
 
 <ul class="post-metadata">
-	<li><time datetime="2018-04-25">25 April 2018</time></li>
-	<li><a href="/tags/gamedev/" class="post-tag">gamedev</a></li>
+	<li><time datetime="2018-05-01">01 May 2018</time></li>
+	<li><a href="/tags/games/" class="post-tag">games</a>, </li>
+	<li><a href="/tags/unity3d/" class="post-tag">unity3d</a>, </li>
+	<li><a href="/tags/godot3d/" class="post-tag">godot3d</a></li>
 </ul>
 
-<p>I have a case where I need to snap my character's direction to the nearest axis. It looks something like this.</p>
-<p><img src="https://i.imgur.com/iTCZXET.gif" alt="Imgur"></p>
-<p>My solution is to identify the axis with the largest absolute value, set it to 1, and set the other axes to 0. I also retain the sign of the largest axis.</p>
-<p>Example, we have <strong>Vector3(-0.5f, 0.1f, 0)</strong>. The snapped direction is Vector3(-1,0,0).</p>
-<pre class="language-csharp" tabindex="0"><code class="language-csharp"><span class="token return-type class-name">Vector3</span> <span class="token function">SnappedToNearestAxis</span><span class="token punctuation">(</span><span class="token class-name">Vector3</span> direction<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token class-name"><span class="token keyword">float</span></span> x <span class="token operator">=</span> <span class="token function">Abs</span><span class="token punctuation">(</span>direction<span class="token punctuation">.</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token class-name"><span class="token keyword">float</span></span> y <span class="token operator">=</span> <span class="token function">Abs</span><span class="token punctuation">(</span>direction<span class="token punctuation">.</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token class-name"><span class="token keyword">float</span></span> z <span class="token operator">=</span> <span class="token function">Abs</span><span class="token punctuation">(</span>direction<span class="token punctuation">.</span>z<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">></span> y <span class="token operator">&amp;</span>amp<span class="token punctuation">;</span><span class="token operator">&amp;</span>amp<span class="token punctuation">;</span> x <span class="token operator">></span> z<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token function">Vector3</span><span class="token punctuation">(</span><span class="token function">Sign</span><span class="token punctuation">(</span>direction<span class="token punctuation">.</span>x<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>y <span class="token operator">></span> x <span class="token operator">&amp;&amp;</span> y <span class="token operator">></span> z<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token function">Vector3</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token function">Sign</span><span class="token punctuation">(</span>direction<span class="token punctuation">.</span>y<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token function">Vector3</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token function">Sign</span><span class="token punctuation">(</span>direction<span class="token punctuation">.</span>z<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre>
+<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+<h2 id="section-header" tabindex="-1">Section Header <a class="header-anchor" href="#section-header">#</a></h2>
+<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+<pre class="language-diff-js" tabindex="0"><code class="language-diff-js"><span class="token unchanged language-js"><span class="token prefix unchanged"> </span><span class="token comment">// this is a command</span>
+<span class="token prefix unchanged"> </span><span class="token keyword">function</span> <span class="token function">myCommand</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="token inserted-sign inserted language-js"><span class="token prefix inserted">+</span>  <span class="token keyword">let</span> counter <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+</span><span class="token deleted-sign deleted language-js"><span class="token prefix deleted">-</span>  <span class="token keyword">let</span> counter <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</span><span class="token unchanged language-js"><span class="token prefix unchanged"> </span>  counter<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token prefix unchanged"> </span><span class="token punctuation">}</span>
+</span>
+<span class="token unchanged language-js"><span class="token prefix unchanged"> </span><span class="token comment">// Test with a line break above this line.</span>
+<span class="token prefix unchanged"> </span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Test'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
 
-<ul class="links-nextprev"><li>Next: <a href="/blog/2020/0704-connection-refused-errno-111/">SocketException: OS Error: Connection refused, errno = 111</a></li>
-</ul>
 
 		</main>
 
 		<footer></footer>
 
-		<!-- Current page: /blog/2018/0425-snap-vector-direction-to-nearest-axis/ -->
+		<!-- Current page: /games/my-game/ -->
 	</body>
 </html>

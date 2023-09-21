@@ -10,6 +10,6 @@ This blog is hosted using [Github Pages](https://pages.github.com/) and built wi
 
 With the advent of static site generators, it is now possible to create a blogging website hosted on static web hosting. Github has its native support for static site generator with Jekyll. But I decided to use Eleventy instead. 
 
-I'll be posting everything about programming and technology here. Hopefully, I can overcome procrastination and start blogging again.
+I'll be posting everything about programming and technology here. Hopefully, I can overcome procrastination and start blogging again. Also, I'll be migrating my old posts from my previous defunct blog.  
 
 See you

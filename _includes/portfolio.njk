@@ -1,0 +1,9 @@
+{%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %}
+{% for post in postslist | reverse %}
+	<article class="postlist-article">
+		<h1 class="postlist-header">
+			{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}{% if post.data.draft %} (draft){% endif %}
+		</h1>
+		{{ post.content | safe }}
+	</article>		
+{% endfor %}

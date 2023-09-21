@@ -4,9 +4,6 @@ eleventyNavigation:
   key: Works
   order: 2
 ---
-<h1>Coming Soon</h1>
-
-
-
-{# {% set postslist = collections.posts %}
-{% include "postslist.njk" %} #}
+<h1>Selected Works</h1>
+{% set postslist = collections.works %}
+{% include "portfolio.njk" %}

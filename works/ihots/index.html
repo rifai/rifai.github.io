@@ -13,13 +13,180 @@
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Rifai&#39;s blog</title>
+		<title>I-HOTS</title>
 		<meta name="description" content="Personal blog of Rifai.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Rifai&#39;s blog">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Rifai&#39;s blog">
 		<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 		
-		<style>.postlist { counter-reset: start-from 4 }
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
 * { box-sizing: border-box; }
 /* Defaults */
 :root {
@@ -319,49 +486,23 @@ h2 + .header-anchor {
 				<ul class="nav">
 					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/blog/">Blog</a></li>
-					<li class="nav-item"><a href="/works/" aria-current="page">Works</a></li>
+					<li class="nav-item"><a href="/works/">Works</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<main id="skip">
-			<h1>Selected Works</h1>
+			
+<h1>I-HOTS</h1>
 
+<ul class="post-metadata">
+	<li><time datetime="2020-12-01">01 December 2020</time></li>
+	<li><a href="/tags/works/" class="post-tag">works</a>, </li>
+	<li><a href="/tags/portfolio/" class="post-tag">portfolio</a>, </li>
+	<li><a href="/tags/flutter/" class="post-tag">flutter</a></li>
+</ul>
 
-
-	<article class="postlist-article">
-		<h1 class="postlist-header">
-			OH SMART TOOLS
-		</h1>
-		<p><strong>Client</strong>: PERTAMINA REFINERY UNIT VII - KASIM, PAPUA BARAT</p>
-<p><strong>Duration</strong>: Nov 2021 - Jul 2022</p>
-<p><strong>Technologies Used</strong>: Flutter, Dart, Android, Plotly</p>
-<p><strong>Description</strong>:</p>
-<p>Pertamina is the state-owned oil and natural gas corporation of Indonesia. It is one of the largest and most prominent energy companies in the country and plays a crucial role in the exploration, production, refining, distribution, and trading of oil, natural gas, and other energy-related products.</p>
-<p>OH Smart Tools is a mobile application designed to ensure the safety of workers in a factory environment by monitoring and visualizing hazard levels. The app focuses on implementing graphics using Plotly to provide users with a clear understanding of the hazard levels and facilitate effective decision-making.</p>
-<p><picture><source type="image/avif" srcset="/img/cAGs9ehQv1-512.avif 512w"><source type="image/webp" srcset="/img/cAGs9ehQv1-512.webp 512w"><img alt="screenshot oh" loading="lazy" decoding="async" src="/img/cAGs9ehQv1-512.jpeg" width="512" height="230"></picture></p>
-
-	</article>		
-
-	<article class="postlist-article">
-		<h1 class="postlist-header">
-			Meducine App
-		</h1>
-		<p><strong>Client</strong>: Meducine.id</p>
-<p><strong>Duration</strong>: Jul 2020 - Mar 2021</p>
-<p><strong>Technologies Used</strong>: Flutter, Video Player, PDF Reader, Rest API</p>
-<p><strong>Description</strong>:</p>
-<p>Meducine is a Medical education membership website with over 5000+ members and 100+ presenters. Developed Android version of Meducine using Flutter.</p>
-<p><picture><source type="image/avif" srcset="/img/MrWpauyIeA-264.avif 264w"><source type="image/webp" srcset="/img/MrWpauyIeA-264.webp 264w"><img alt="screenshot meducine 0" loading="lazy" decoding="async" src="/img/MrWpauyIeA-264.png" width="264" height="512"></picture>
-<picture><source type="image/avif" srcset="/img/ShIdHkwBeq-265.avif 265w"><source type="image/webp" srcset="/img/ShIdHkwBeq-265.webp 265w"><img alt="screenshot meducine 1" loading="lazy" decoding="async" src="/img/ShIdHkwBeq-265.png" width="265" height="512"></picture></p>
-
-	</article>		
-
-	<article class="postlist-article">
-		<h1 class="postlist-header">
-			I-HOTS
-		</h1>
-		<p><strong>Client</strong>: PERTAMINA REFINERY UNIT VII - KASIM, PAPUA BARAT</p>
+<p><strong>Client</strong>: PERTAMINA REFINERY UNIT VII - KASIM, PAPUA BARAT</p>
 <p><strong>Duration</strong>: Nov 2021 - Jul 2022</p>
 <p><strong>Technologies Used</strong>: Flutter, Dart, Charts</p>
 <p><strong>Description</strong>:</p>
@@ -369,14 +510,11 @@ h2 + .header-anchor {
 <p><picture><source type="image/avif" srcset="/img/7iknv0ZihE-308.avif 308w"><source type="image/webp" srcset="/img/7iknv0ZihE-308.webp 308w"><img alt="screenshot ihots 0" loading="lazy" decoding="async" src="/img/7iknv0ZihE-308.png" width="308" height="512"></picture>
 <picture><source type="image/avif" srcset="/img/995aKXAPZN-243.avif 243w"><source type="image/webp" srcset="/img/995aKXAPZN-243.webp 243w"><img alt="screenshot ihots 1" loading="lazy" decoding="async" src="/img/995aKXAPZN-243.png" width="243" height="512"></picture></p>
 
-	</article>		
-
-
 
 		</main>
 
 		<footer></footer>
 
-		<!-- Current page: /works/ -->
+		<!-- Current page: /works/ihots/ -->
 	</body>
 </html>

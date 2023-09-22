@@ -4,15 +4,20 @@ eleventyNavigation:
   key: Home
   order: 1
 ---
-# Ahmad Rifai
 
-#### I'm a Mobile and Game Developer
+# Hello, I'm Ahmad Rifai
 
-Mobile front-end developer with 6 years experience. Expert in mobile development specififically in Android (Java/Kotlin) and cross platform (Flutter). 
+## Mobile & Game Developer
 
-Skilled problem solver and tech enthusiast. I'm open for hiring.
+Welcome! I'm Ahmad Rifai, a Mobile & Game Developer with expertise in Flutter, Android (Java & Kotlin), Godot 3D, and Unity 3D. I craft engaging mobile experiences and captivating games.  
 
-Contact me at :
-* Email : <arifai.dev@gmail.com>
-* Github : [rifai](https://github.com/rifai/)
-* Linkedin : [Ahmad Rifai](https://www.linkedin.com/in/ahmad-rifai-66b05973/)
+I'm open for hiring.
+
+
+**Contact**:  
+📧 Email    : <arifai.dev@gmail.com>  
+🌐 GitHub   : [rifai](https://github.com/rifai/)  
+🔗 LinkedIn : [Ahmad Rifai](https://www.linkedin.com/in/ahmad-rifai-66b05973/)  
+
+Download My Resume: [Resume/CV (PDF)](/cv_ahmad_rifai.pdf)
+

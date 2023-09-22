@@ -13,13 +13,181 @@
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Rifai&#39;s blog</title>
+		<title>MARKETING MONITORING SYSTEM</title>
 		<meta name="description" content="Personal blog of Rifai.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Rifai&#39;s blog">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Rifai&#39;s blog">
 		<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 		
-		<style>* { box-sizing: border-box; }
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+* { box-sizing: border-box; }
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
@@ -324,53 +492,30 @@ h2 + .header-anchor {
 		</header>
 
 		<main id="skip">
-			<!-- Delete this message, it will also remove the component CSS from the bundle -->
+			
+<h1>MARKETING MONITORING SYSTEM</h1>
 
-<!-- Stop deleting -->
-
-
-
-<h1>Tags</h1>
-
-<ul>
-
-	
-	<li><a href="/tags/gamedev/" class="post-tag">gamedev</a></li>
-
-	
-	<li><a href="/tags/games/" class="post-tag">games</a></li>
-
-	
-	<li><a href="/tags/unity3d/" class="post-tag">unity3d</a></li>
-
-	
-	<li><a href="/tags/godot3d/" class="post-tag">godot3d</a></li>
-
-	
-	<li><a href="/tags/works/" class="post-tag">works</a></li>
-
-	
-	<li><a href="/tags/portfolio/" class="post-tag">portfolio</a></li>
-
-	
+<ul class="post-metadata">
+	<li><time datetime="2018-08-01">01 August 2018</time></li>
+	<li><a href="/tags/works/" class="post-tag">works</a>, </li>
+	<li><a href="/tags/portfolio/" class="post-tag">portfolio</a>, </li>
 	<li><a href="/tags/android/" class="post-tag">android</a></li>
-
-	
-	<li><a href="/tags/webdev/" class="post-tag">webdev</a></li>
-
-	
-	<li><a href="/tags/windows/" class="post-tag">windows</a></li>
-
-	
-	<li><a href="/tags/flutter/" class="post-tag">flutter</a></li>
-
 </ul>
+
+<p><strong>Client</strong>: PP PROPERTY (GRAND SHAMAYA)</p>
+<p><strong>Duration</strong>: May - Aug 2018</p>
+<p><strong>Technologies Used</strong>: Android, Java, Google Maps, Location API</p>
+<p><strong>Description</strong>:</p>
+<p>PP Properti (Pembangunan Perumahan Properti) is an Indonesian state-owned enterprise that specializes in property development and real estate projects.</p>
+<p>Marketing Monitoring System is an application that offers key features, including event reminders, access to promotional materials, reporting functionalities, and activity monitoring through GPS and Google Maps integration.</p>
+<p><picture><source type="image/avif" srcset="/img/b2D1FRG2x7-252.avif 252w"><source type="image/webp" srcset="/img/b2D1FRG2x7-252.webp 252w"><img alt="screenshot shamaya 1" loading="lazy" decoding="async" src="/img/b2D1FRG2x7-252.png" width="252" height="434"></picture>
+<picture><source type="image/avif" srcset="/img/EWrWHstCS4-243.avif 243w"><source type="image/webp" srcset="/img/EWrWHstCS4-243.webp 243w"><img alt="screenshot shamaya 0" loading="lazy" decoding="async" src="/img/EWrWHstCS4-243.png" width="243" height="432"></picture></p>
 
 
 		</main>
 
 		<footer></footer>
 
-		<!-- Current page: /tags/ -->
+		<!-- Current page: /works/shamaya/ -->
 	</body>
 </html>

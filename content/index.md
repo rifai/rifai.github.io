@@ -3,21 +3,20 @@ layout: layouts/base.njk
 eleventyNavigation:
   key: Home
   order: 1
+numberOfLatestPostsToShow: 5
 ---
 
-# Hello, I'm Ahmad Rifai
-
-## Mobile & Game Developer
-
-Welcome! I'm Ahmad Rifai, a Mobile & Game Developer with expertise in Flutter, Android (Java & Kotlin), Godot 3D, and Unity 3D. I craft engaging mobile experiences and captivating games.  
-
-I'm open for hiring.
+Welcome! I'm Ahmad Rifai, a Mobile & Game Developer
 
 
-**Contact**:  
-📧 Email    : <arifai.dev@gmail.com>  
-🌐 GitHub   : [rifai](https://github.com/rifai/)  
-🔗 LinkedIn : [Ahmad Rifai](https://www.linkedin.com/in/ahmad-rifai-66b05973/)  
+{% set postsCount = collections.posts | length %}
+## Latest Posts
+{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+{% include "postslist.njk" %}
 
-Download My Resume: [Resume/CV (PDF)](/cv_ahmad_rifai.pdf)
+{% set morePosts = postsCount - numberOfLatestPostsToShow %}
+{% if morePosts > 0 %}
+<p><a href="/blog/">View all</a></p>
+{% endif %}
+
 

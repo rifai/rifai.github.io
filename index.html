@@ -6,9 +6,12 @@
 		<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
+		console.log("gtag setup");
 		gtag('js', new Date());
 
 		gtag('config', 'G-9884WG861M');
+		console.log("gtag setup done");
+
 		</script>
 
 		<meta charset="utf-8">
@@ -19,7 +22,8 @@
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Rifai&#39;s blog">
 		<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 		
-		<style>* { box-sizing: border-box; }
+		<style>.postlist { counter-reset: start-from 6 }
+* { box-sizing: border-box; }
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
@@ -319,20 +323,46 @@ h2 + .header-anchor {
 					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
 					<li class="nav-item"><a href="/blog/">Blog</a></li>
 					<li class="nav-item"><a href="/works/">Works</a></li>
+					<li class="nav-item"><a href="/about/">About me</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<main id="skip">
-			<h1 id="hello-i-m-ahmad-rifai" tabindex="-1">Hello, I'm Ahmad Rifai <a class="header-anchor" href="#hello-i-m-ahmad-rifai">#</a></h1>
-<h2 id="mobile-and-game-developer" tabindex="-1">Mobile &amp; Game Developer <a class="header-anchor" href="#mobile-and-game-developer">#</a></h2>
-<p>Welcome! I'm Ahmad Rifai, a Mobile &amp; Game Developer with expertise in Flutter, Android (Java &amp; Kotlin), Godot 3D, and Unity 3D. I craft engaging mobile experiences and captivating games.</p>
-<p>I'm open for hiring.</p>
-<p><strong>Contact</strong>:<br>
-📧 Email    : <a href="mailto:arifai.dev@gmail.com">arifai.dev@gmail.com</a><br>
-🌐 GitHub   : <a href="https://github.com/rifai/">rifai</a><br>
-🔗 LinkedIn : <a href="https://www.linkedin.com/in/ahmad-rifai-66b05973/">Ahmad Rifai</a></p>
-<p>Download My Resume: <a href="/cv_ahmad_rifai.pdf">Resume/CV (PDF)</a></p>
+			<p>Welcome! I'm Ahmad Rifai, a Mobile &amp; Game Developer</p>
+<h2 id="latest-posts" tabindex="-1">Latest Posts <a class="header-anchor" href="#latest-posts">#</a></h2>
+<ul>
+<p><li class="postlist-item">
+<a href="/blog/2023/0921-hello-world/" class="postlist-link">Hello world.</a>
+<time class="postlist-date" datetime="2023-09-21">21 September
+2023</time>
+<span>My yet another blog.</span></p>
+<p></li></p>
+<p><li class="postlist-item">
+<a href="/blog/2021/0905-fat-astro/" class="postlist-link">Protoype Demo - Fat Astro</a>
+<time class="postlist-date" datetime="2020-07-04">4 July
+2020</time>
+<span>Three years ago, I made game demo called Fat Astro.</span></p>
+<p></li></p>
+<p><li class="postlist-item">
+<a href="/blog/2020/0704-custom-url-domain-xampp/" class="postlist-link">Custom url domain in Xampp</a>
+<time class="postlist-date" datetime="2020-07-04">4 July
+2020</time>
+<span>I got this weird error when developing flutter app in windows.</span></p>
+<p></li></p>
+<p><li class="postlist-item">
+<a href="/blog/2020/0704-connection-refused-errno-111/" class="postlist-link">SocketException: OS Error: Connection refused, errno = 111</a>
+<time class="postlist-date" datetime="2020-07-04">4 July
+2020</time>
+<span>I got this weird error when developing flutter app in windows.</span></p>
+<p></li></p>
+<p><li class="postlist-item">
+<a href="/blog/2018/0425-snap-vector-direction-to-nearest-axis/" class="postlist-link">Snap vector direction to nearest axis.</a>
+<time class="postlist-date" datetime="2018-04-25">25 April
+2018</time>
+<span>I have this case when I need to get my character direction is snapped to the nearest axis.</span></p>
+<p></li></p>
+</ul>
 
 		</main>
 

@@ -24,7 +24,7 @@
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Rifai&#39;s blog">
 		<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 		
-		<style>.postlist { counter-reset: start-from 6 }
+		<style>.postlist { counter-reset: start-from 8 }
 * { box-sizing: border-box; }
 /* Defaults */
 :root {
@@ -77,9 +77,11 @@ body {
 	color: var(--text-color);
 	background-color: var(--background-color);
 }
+
 html {
 	overflow-y: scroll;
 }
+
 body {
 	max-width: 40em;
 }
@@ -98,6 +100,7 @@ body {
 p:last-child {
 	margin-bottom: 0;
 }
+
 p {
 	line-height: 1.5;
 }
@@ -113,9 +116,11 @@ li {
 a[href] {
 	color: var(--text-color-link);
 }
+
 a[href]:visited {
 	color: var(--text-color-link-visited);
 }
+
 a[href]:hover,
 a[href]:active {
 	color: var(--text-color-link-active);
@@ -124,6 +129,7 @@ a[href]:active {
 main {
 	padding: 1rem;
 }
+
 main :first-child {
 	margin-top: 0;
 }
@@ -131,6 +137,7 @@ main :first-child {
 header {
 	border-bottom: 1px dashed var(--color-gray-20);
 }
+
 header:after {
 	content: "";
 	display: table;
@@ -146,6 +153,7 @@ header:after {
 table {
 	margin: 1em 0;
 }
+
 table td,
 table th {
 	padding-right: 1em;
@@ -155,9 +163,11 @@ pre,
 code {
 	font-family: var(--font-family-monospace);
 }
+
 pre:not([class*="language-"]) {
 	margin: .5em 0;
-	line-height: 1.375; /* 22px /16 */
+	line-height: 1.375;
+	/* 22px /16 */
 	-moz-tab-size: var(--syntax-tab-size);
 	-o-tab-size: var(--syntax-tab-size);
 	tab-size: var(--syntax-tab-size);
@@ -170,6 +180,7 @@ pre:not([class*="language-"]) {
 	word-spacing: normal;
 	word-break: normal;
 }
+
 code {
 	word-break: break-all;
 }
@@ -182,11 +193,14 @@ header {
 	align-items: center;
 	padding: 1em;
 }
+
 .home-link {
-	font-size: 1em; /* 16px /16 */
+	font-size: 1em;
+	/* 16px /16 */
 	font-weight: 700;
 	margin-right: 2em;
 }
+
 .home-link:link:not(:hover) {
 	text-decoration: none;
 }
@@ -198,13 +212,16 @@ header {
 	margin: 0;
 	list-style: none;
 }
+
 .nav-item {
 	display: inline-block;
 	margin-right: 1em;
 }
+
 .nav-item a[href]:not(:hover) {
 	text-decoration: none;
 }
+
 .nav a[href][aria-current="page"] {
 	text-decoration: underline;
 }
@@ -215,6 +232,7 @@ header {
 	padding: 0;
 	padding-left: 1.5rem;
 }
+
 .postlist-item {
 	display: flex;
 	flex-wrap: wrap;
@@ -222,6 +240,27 @@ header {
 	counter-increment: start-from -1;
 	margin-bottom: 1em;
 }
+
+.latestpost-item {
+	display: flex;
+	align-items: center;
+}
+
+.latestpost-item h2 {
+	margin: 0;
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 0.1px;
+}
+
+.latestpost-date {
+	min-width: 120px;
+	padding-right: 10px;
+	font-size: 16px;
+
+	font-weight: bold;
+}
+
 /* .postlist-item:before {
 	display: inline-block;
 	pointer-events: none;
@@ -232,9 +271,11 @@ header {
 } */
 .postlist-date,
 .postlist-item:before {
-	font-size: 0.8125em; /* 13px /16 */
+	font-size: 0.8125em;
+	/* 13px /16 */
 	color: var(--color-gray-90);
 }
+
 .postlist-date {
 	word-spacing: -0.5px;
 	flex-basis: calc(100% - 1.5rem);
@@ -252,7 +293,8 @@ header {
 }
 
 .postlist-link {
-	font-size: 1.1875em; /* 19px /16 */
+	font-size: 1.1875em;
+	/* 19px /16 */
 	font-weight: 700;
 	flex-basis: calc(100% - 1.5rem);
 	/* padding-left: .25em; */
@@ -261,6 +303,7 @@ header {
 	text-underline-offset: 0;
 	text-decoration-thickness: 1px;
 }
+
 .postlist-item-active .postlist-link {
 	font-weight: bold;
 }
@@ -273,7 +316,8 @@ header {
 	text-transform: capitalize;
 	font-style: italic;
 }
-.postlist-item > .post-tag {
+
+.postlist-item>.post-tag {
 	align-self: center;
 }
 
@@ -286,6 +330,7 @@ header {
 	padding: 0;
 	margin: 0;
 }
+
 .post-metadata time {
 	margin-right: 1em;
 }
@@ -297,20 +342,23 @@ header {
 	font-size: 1em;
 	margin-left: .1em;
 }
+
 a[href].header-anchor,
 a[href].header-anchor:visited {
 	color: transparent;
 }
+
 a[href].header-anchor:focus,
 a[href].header-anchor:hover {
 	text-decoration: underline;
 }
+
 a[href].header-anchor:focus,
-:hover > a[href].header-anchor {
+:hover>a[href].header-anchor {
 	color: #aaa;
 }
 
-h2 + .header-anchor {
+h2+.header-anchor {
 	font-size: 1.5em;
 }</style>
 	</head>
@@ -332,40 +380,56 @@ h2 + .header-anchor {
 
 		<main id="skip">
 			<p>Welcome! I'm Ahmad Rifai, a Mobile &amp; Game Developer</p>
-<h2 id="latest-posts" tabindex="-1">Latest Posts <a class="header-anchor" href="#latest-posts">#</a></h2>
-<ul>
-<p><li class="postlist-item">
-<a href="/blog/2023/0929-common-git-scenario/" class="postlist-link">Git scenario 1 : Urgent bug report</a>
-<time class="postlist-date" datetime="2023-09-28">28 September
+<h1 id="latest-posts" tabindex="-1">Latest Posts <a class="header-anchor" href="#latest-posts">#</a></h1>
+<p><article class="latestpost-item">
+<time class="latestpost-date" datetime="2023-09-28">28 Sep
 2023</time>
-<span>You're working on a software project and are in the middle of implementing a new feature in your branch.</span></p>
-<p></li></p>
-<p><li class="postlist-item">
-<a href="/blog/2023/0928-frequenly-used-git-command/" class="postlist-link">Frequently used git command</a>
-<time class="postlist-date" datetime="2023-09-28">28 September
+<a href="/blog/2023/0929-common-git-scenario/">
+<h2>Git scenario 1 : Urgent bug report  </h2>
+</a>
+</article></p>
+<p><article class="latestpost-item">
+<time class="latestpost-date" datetime="2023-09-28">28 Sep
 2023</time>
-<span>Here's a list of Git commands I use frequently, as well as some less common ones</span></p>
-<p></li></p>
-<p><li class="postlist-item">
-<a href="/blog/2023/0921-hello-world/" class="postlist-link">Hello world.</a>
-<time class="postlist-date" datetime="2023-09-21">21 September
+<a href="/blog/2023/0928-frequenly-used-git-command/">
+<h2>Frequently used git command  </h2>
+</a>
+</article></p>
+<p><article class="latestpost-item">
+<time class="latestpost-date" datetime="2023-09-21">21 Sep
 2023</time>
-<span>My yet another blog.</span></p>
-<p></li></p>
-<p><li class="postlist-item">
-<a href="/blog/2021/0905-fat-astro/" class="postlist-link">Protoype Demo - Fat Astro</a>
-<time class="postlist-date" datetime="2020-07-04">4 July
+<a href="/blog/2023/0921-hello-world/">
+<h2>Hello world.  </h2>
+</a>
+</article></p>
+<p><article class="latestpost-item">
+<time class="latestpost-date" datetime="2020-07-04">04 Jul
 2020</time>
-<span>Three years ago, I made game demo called Fat Astro.</span></p>
-<p></li></p>
-<p><li class="postlist-item">
-<a href="/blog/2020/0704-custom-url-domain-xampp/" class="postlist-link">Custom url domain in Xampp</a>
-<time class="postlist-date" datetime="2020-07-04">4 July
+<a href="/blog/2021/0905-fat-astro/">
+<h2>Protoype Demo - Fat Astro  </h2>
+</a>
+</article></p>
+<p><article class="latestpost-item">
+<time class="latestpost-date" datetime="2020-07-04">04 Jul
 2020</time>
-<span>I got this weird error when developing flutter app in windows.</span></p>
-<p></li></p>
-</ul>
-<p><a href="/blog/">View all</a></p>
+<a href="/blog/2020/0704-custom-url-domain-xampp/">
+<h2>Custom url domain in Xampp  </h2>
+</a>
+</article></p>
+<p><article class="latestpost-item">
+<time class="latestpost-date" datetime="2020-07-04">04 Jul
+2020</time>
+<a href="/blog/2020/0704-connection-refused-errno-111/">
+<h2>SocketException: OS Error: Connection refused, errno = 111  </h2>
+</a>
+</article></p>
+<p><article class="latestpost-item">
+<time class="latestpost-date" datetime="2018-04-25">25 Apr
+2018</time>
+<a href="/blog/2018/0425-snap-vector-direction-to-nearest-axis/">
+<h2>Snap vector direction to nearest axis.  </h2>
+</a>
+</article></p>
 
 		</main>
 

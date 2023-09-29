@@ -52,6 +52,16 @@
 	</url>
 	
 	<url>
+		<loc>https://rifai.github.io/blog/2023/0928-frequenly-used-git-command/</loc>
+		<lastmod>2023-09-28</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://rifai.github.io/blog/2023/0929-common-git-scenario/</loc>
+		<lastmod>2023-09-28</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://rifai.github.io/about/</loc>
 		<lastmod>2023-09-29</lastmod>
 	</url>
@@ -138,6 +148,11 @@
 	
 	<url>
 		<loc>https://rifai.github.io/tags/windows/</loc>
+		<lastmod>2023-09-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://rifai.github.io/tags/git/</loc>
 		<lastmod>2023-09-29</lastmod>
 	</url>
 	

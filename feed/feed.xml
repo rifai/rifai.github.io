@@ -4,12 +4,98 @@
 	<subtitle>Personal blog of Rifai.</subtitle>
 	<link href="https://rifai.github.io/feed/feed.xml" rel="self"/>
 	<link href="https://rifai.github.io/"/>
-	<updated>2023-09-21T00:00:00Z</updated>
+	<updated>2023-09-28T00:00:00Z</updated>
 	<id>https://rifai.github.io/</id>
 	<author>
 		<name>Ahmad Rifai</name>
 		<email>arifai.dev@gmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Git scenario 1 : Urgent bug report</title>
+		<link href="https://rifai.github.io/blog/2023/0929-common-git-scenario/"/>
+		<updated>2023-09-28T00:00:00Z</updated>
+		<id>https://rifai.github.io/blog/2023/0929-common-git-scenario/</id>
+		<content type="html">&lt;p&gt;You&#39;re working on a software project and are in the middle of implementing a new feature in your branch. However, you receive an urgent bug report that requires your immediate attention.&lt;br&gt;
+You don&#39;t want to commit your incomplete work, so you decide to use git stash to temporarily save your changes and switch to a different branch to fix the bug.&lt;/p&gt;
+&lt;h2 id=&quot;1-check-your-current-branch&quot; tabindex=&quot;-1&quot;&gt;1. Check your current branch: &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.github.io/blog/2023/0929-common-git-scenario/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; branch&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Output:&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;* feature-branch
+master&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You are currently on the &lt;strong&gt;feature-branch&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;2-save-your-changes-to-a-stash&quot; tabindex=&quot;-1&quot;&gt;2. Save your changes to a stash: &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.github.io/blog/2023/0929-common-git-scenario/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; stash save &lt;span class=&quot;token string&quot;&gt;&quot;Work in progress on new feature&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This command stashes the changes with a descriptive message.&lt;/p&gt;
+&lt;h2 id=&quot;3-check-the-list-of-stashes&quot; tabindex=&quot;-1&quot;&gt;3. Check the list of stashes: &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.github.io/blog/2023/0929-common-git-scenario/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; stash list&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Output:&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;stash@&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;: On feature-branch: Work &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; progress on new feature&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;4-switch-to-another-branch&quot; tabindex=&quot;-1&quot;&gt;4. Switch to another branch: &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.github.io/blog/2023/0929-common-git-scenario/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; checkout bug-fix-branch&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The developer is now on the &lt;strong&gt;bug-fix-branch&lt;/strong&gt; to address the urgent bug.&lt;/p&gt;
+&lt;h2 id=&quot;5-fix-the-bug&quot; tabindex=&quot;-1&quot;&gt;5. Fix the bug: &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.github.io/blog/2023/0929-common-git-scenario/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class=&quot;language-c&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Make necessary code changes to fix the bug&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;6-commit-the-bug-fix&quot; tabindex=&quot;-1&quot;&gt;6. Commit the bug fix: &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.github.io/blog/2023/0929-common-git-scenario/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; commit &lt;span class=&quot;token parameter variable&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Fixed the critical bug&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The bug is fixed, and the changes are committed.&lt;/p&gt;
+&lt;h2 id=&quot;7-switch-back-to-the-feature-branch&quot; tabindex=&quot;-1&quot;&gt;7. Switch back to the feature branch: &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.github.io/blog/2023/0929-common-git-scenario/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; checkout feature-branch&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The developer returns to the &lt;strong&gt;feature-branch&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;8-apply-the-stashed-changes&quot; tabindex=&quot;-1&quot;&gt;8. Apply the stashed changes: &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.github.io/blog/2023/0929-common-git-scenario/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; stash apply stash@&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The previously stashed changes are applied to the feature-branch. The developer can continue working on the new feature from where they left off.&lt;/p&gt;
+&lt;h2 id=&quot;9-check-the-status&quot; tabindex=&quot;-1&quot;&gt;9. Check the status: &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.github.io/blog/2023/0929-common-git-scenario/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; status&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The developer sees the unstashed changes and can proceed with feature development.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Frequently used git command</title>
+		<link href="https://rifai.github.io/blog/2023/0928-frequenly-used-git-command/"/>
+		<updated>2023-09-28T00:00:00Z</updated>
+		<id>https://rifai.github.io/blog/2023/0928-frequenly-used-git-command/</id>
+		<content type="html">&lt;p&gt;While using a GUI client for Git is helpful and user-friendly, the command-line interface, although more complex, offers greater power and speed.&lt;/p&gt;
+&lt;p&gt;I&#39;ve written this post to serve as a handy reference, eliminating the need to repeatedly search for specific commands on Google or Stack Overflow.&lt;/p&gt;
+&lt;p&gt;Here&#39;s a list of Git commands I use frequently, as well as some less common ones&lt;/p&gt;
+&lt;h2 id=&quot;init&quot; tabindex=&quot;-1&quot;&gt;Init &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.github.io/blog/2023/0928-frequenly-used-git-command/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Initializes a new Git repository in current directory.&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; init &lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;clone&quot; tabindex=&quot;-1&quot;&gt;Clone &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.github.io/blog/2023/0928-frequenly-used-git-command/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Clone a remote Git repository on local computer&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; clone https://repo-url.com &lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;status&quot; tabindex=&quot;-1&quot;&gt;Status &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.github.io/blog/2023/0928-frequenly-used-git-command/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Displays the current status of the working directory&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; status&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;add&quot; tabindex=&quot;-1&quot;&gt;Add &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.github.io/blog/2023/0928-frequenly-used-git-command/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Stages changes in the working directory for the next commit&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;file&lt;span class=&quot;token operator&quot;&gt;&lt;span class=&quot;token file-descriptor important&quot;&gt;1&lt;/span&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;file&lt;span class=&quot;token operator&quot;&gt;&lt;span class=&quot;token file-descriptor important&quot;&gt;2&lt;/span&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;file&lt;span class=&quot;token operator&quot;&gt;&lt;span class=&quot;token file-descriptor important&quot;&gt;3&lt;/span&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;.&lt;/span&gt;  &lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;commit&quot; tabindex=&quot;-1&quot;&gt;Commit &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.github.io/blog/2023/0928-frequenly-used-git-command/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Records changes in a new commit along with a descriptive message&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; commit –m &lt;span class=&quot;token string&quot;&gt;&quot;&amp;lt;message here&gt;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;stash&quot; tabindex=&quot;-1&quot;&gt;Stash &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.github.io/blog/2023/0928-frequenly-used-git-command/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Temporarily saves changes for later use.&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; stash save &lt;span class=&quot;token parameter variable&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&amp;lt;message here&gt;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Applies the changes from a specific stash back to working directory. The stash index number (e.g., stash@{0}) identifies the stash to apply. If not specified, it applies the most recent one.&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; stash apply &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;stash@&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Applies and removes the changes from a specific stash. If not specified, it applies and removes the most recent stash.&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; stash pop &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;stash@&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Deletes a specific stash, permanently removing it.&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; stash drop &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;stash@&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;: &lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;fetch&quot; tabindex=&quot;-1&quot;&gt;Fetch &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.github.io/blog/2023/0928-frequenly-used-git-command/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Downloads changes from a remote repository without merging.&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; fetch&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;pull&quot; tabindex=&quot;-1&quot;&gt;Pull &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.github.io/blog/2023/0928-frequenly-used-git-command/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Fetches and merges changes from a remote repository into the current branch.&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; pull&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;push&quot; tabindex=&quot;-1&quot;&gt;Push &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.github.io/blog/2023/0928-frequenly-used-git-command/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Sends local commits to a remote repository to share changes.&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To be continued ...&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Hello world.</title>

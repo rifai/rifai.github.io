@@ -16,8 +16,8 @@
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Hello world.</title>
-		<meta name="description" content="My yet another blog.">
+		<title>Frequently used git command</title>
+		<meta name="description" content="Here&#39;s a list of Git commands I use frequently, as well as some less common ones">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Rifai&#39;s blog">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Rifai&#39;s blog">
 		<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
@@ -497,25 +497,59 @@ h2 + .header-anchor {
 
 		<main id="skip">
 			
-<h1>Hello world.</h1>
+<h1>Frequently used git command</h1>
 
 <ul class="post-metadata">
-	<li><time datetime="2023-09-21">21 September 2023</time></li>
+	<li><time datetime="2023-09-28">28 September 2023</time></li>
+	<li><a href="/tags/git/" class="post-tag">git</a></li>
 </ul>
 
-<p>Well, this is my first post on my new blog. I never thought I'd be blogging on github, and now here we are.</p>
-<p>This blog is hosted using <a href="https://pages.github.com/">Github Pages</a> and built with <a href="https://www.11ty.dev/">Eleventy</a>. It differs from traditional blogs like WordPress or Blogger because GitHub Pages is a static web hosting platform. As a result, there are no databases or interactive features.</p>
-<p>With the advent of static site generators, it is now possible to create a blogging website hosted on static web hosting. Github has its native support for static site generator with Jekyll. But I decided to use Eleventy instead.</p>
-<p>I'll be posting everything about programming and technology here. Hopefully, I can overcome procrastination and start blogging again. Also, I'll be migrating my old posts from my previous defunct blog.</p>
-<p>See you</p>
+<p>While using a GUI client for Git is helpful and user-friendly, the command-line interface, although more complex, offers greater power and speed.</p>
+<p>I've written this post to serve as a handy reference, eliminating the need to repeatedly search for specific commands on Google or Stack Overflow.</p>
+<p>Here's a list of Git commands I use frequently, as well as some less common ones</p>
+<h2 id="init" tabindex="-1">Init <a class="header-anchor" href="#init">#</a></h2>
+<p>Initializes a new Git repository in current directory.</p>
+<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> init </code></pre>
+<h2 id="clone" tabindex="-1">Clone <a class="header-anchor" href="#clone">#</a></h2>
+<p>Clone a remote Git repository on local computer</p>
+<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> clone https://repo-url.com </code></pre>
+<h2 id="status" tabindex="-1">Status <a class="header-anchor" href="#status">#</a></h2>
+<p>Displays the current status of the working directory</p>
+<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> status</code></pre>
+<h2 id="add" tabindex="-1">Add <a class="header-anchor" href="#add">#</a></h2>
+<p>Stages changes in the working directory for the next commit</p>
+<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> <span class="token operator">&lt;</span>file<span class="token operator"><span class="token file-descriptor important">1</span>></span> <span class="token operator">&lt;</span>file<span class="token operator"><span class="token file-descriptor important">2</span>></span> <span class="token operator">&lt;</span>file<span class="token operator"><span class="token file-descriptor important">3</span>></span>
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>  </code></pre>
+<h2 id="commit" tabindex="-1">Commit <a class="header-anchor" href="#commit">#</a></h2>
+<p>Records changes in a new commit along with a descriptive message</p>
+<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> commit –m <span class="token string">"&lt;message here>"</span></code></pre>
+<h2 id="stash" tabindex="-1">Stash <a class="header-anchor" href="#stash">#</a></h2>
+<p>Temporarily saves changes for later use.</p>
+<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> stash save <span class="token parameter variable">-m</span> <span class="token string">"&lt;message here>"</span></code></pre>
+<p>Applies the changes from a specific stash back to working directory. The stash index number (e.g., stash@{0}) identifies the stash to apply. If not specified, it applies the most recent one.</p>
+<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> stash apply <span class="token punctuation">[</span>stash@<span class="token punctuation">{</span>n<span class="token punctuation">}</span><span class="token punctuation">]</span></code></pre>
+<p>Applies and removes the changes from a specific stash. If not specified, it applies and removes the most recent stash.</p>
+<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> stash pop <span class="token punctuation">[</span>stash@<span class="token punctuation">{</span>n<span class="token punctuation">}</span><span class="token punctuation">]</span></code></pre>
+<p>Deletes a specific stash, permanently removing it.</p>
+<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> stash drop <span class="token punctuation">[</span>stash@<span class="token punctuation">{</span>n<span class="token punctuation">}</span><span class="token punctuation">]</span>: </code></pre>
+<h2 id="fetch" tabindex="-1">Fetch <a class="header-anchor" href="#fetch">#</a></h2>
+<p>Downloads changes from a remote repository without merging.</p>
+<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> fetch</code></pre>
+<h2 id="pull" tabindex="-1">Pull <a class="header-anchor" href="#pull">#</a></h2>
+<p>Fetches and merges changes from a remote repository into the current branch.</p>
+<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> pull</code></pre>
+<h2 id="push" tabindex="-1">Push <a class="header-anchor" href="#push">#</a></h2>
+<p>Sends local commits to a remote repository to share changes.</p>
+<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> push</code></pre>
+<p>To be continued ...</p>
 
-<ul class="links-nextprev"><li>Previous: <a href="/blog/2021/0905-fat-astro/">Protoype Demo - Fat Astro</a></li><li>Next: <a href="/blog/2023/0928-frequenly-used-git-command/">Frequently used git command</a></li>
+<ul class="links-nextprev"><li>Previous: <a href="/blog/2023/0921-hello-world/">Hello world.</a></li><li>Next: <a href="/blog/2023/0929-common-git-scenario/">Git scenario 1 : Urgent bug report</a></li>
 </ul>
 
 		</main>
 
 		<footer></footer>
 
-		<!-- Current page: /blog/2023/0921-hello-world/ -->
+		<!-- Current page: /blog/2023/0928-frequenly-used-git-command/ -->
 	</body>
 </html>

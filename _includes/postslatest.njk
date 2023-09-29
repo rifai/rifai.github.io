@@ -1,0 +1,11 @@
+{%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %}
+{% for post in postslist | reverse %}
+	<article class="latestpost-item">
+		<time class="latestpost-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("dd LLL
+			yyyy")
+			}}</time>
+		<a href="{{ post.url }}">
+			<h2>{{ post.data.title }} {% if post.data.draft %} (draft){% endif %} </h2>
+		</a>
+	</article>
+{% endfor %}

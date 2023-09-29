@@ -3,16 +3,13 @@ layout: layouts/base.njk
 eleventyNavigation:
   key: Home
   order: 1
-numberOfLatestPostsToShow: 5
----
-
+numberOfLatestPostsToShow: 10
+---  
 Welcome! I'm Ahmad Rifai, a Mobile & Game Developer
-
-
 {% set postsCount = collections.posts | length %}
-## Latest Posts
+# Latest Posts
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% include "postslist.njk" %}
+{% include "postslatest.njk" %}
 
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {% if morePosts > 0 %}

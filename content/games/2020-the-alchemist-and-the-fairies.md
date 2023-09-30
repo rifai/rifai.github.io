@@ -17,4 +17,4 @@ https://www.youtube.com/watch?v=l5LPEVb-rkM
 **Technology Used** : Unity3D 
 
 **Role** :  
-In my role as a gameplay programmer utilizing Unity3D, I played a pivotal part in bringing "The Alchemist and The Fairies" to life. My responsibilities included designing and implementing the core gameplay mechanics, ensuring that the game provided an immersive and educational experience for seventh-grade students. 
+The game was developed for the educational game-based platform, <https://legendsoflearning.com>, with me serving as the primary programmer utilizing Unity3D. My colleague and friend, [Crescentyr](https://crescentyr.com), contributed as the designer responsible for crafting assets and gameplay elements.

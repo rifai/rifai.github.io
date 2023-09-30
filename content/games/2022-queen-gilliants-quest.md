@@ -1,18 +1,18 @@
 ---
-title: Corn Field Defense
+title: Queen Gilliant's Quest
 date: 2019-01-01
 tags:
   - html5
   - unity3d
 ---
-https://youtu.be/fCf_HJqlTMk
+https://youtu.be/G0-MX609Qh8
 
 **Description** :  
-"Corn Field Defense" is an immersive educational game tailored for first-grade students, where they embark on an exciting adventure in a virtual cornfield to discover the captivating concept that vibrating objects can create sound. 
+"Queen Gilliant's Quest" is an educational game meticulously designed to provide an engaging and effective learning experience for students, focusing on the fundamental concept of Ratios and Proportional Relationships. 
 
 **Released** : 2022
 
-**Platform** : [HTML5](https://app.legendsoflearning.com/join/YXNzaWdubWVudC0yODM2NjM5?type=game)
+**Platform** : [HTML5](https://games.legendsoflearning.com/games/WyJnYW1lcyIsMjgwNV0=?noSignup=true)
 
 **Technology Used** : Unity3D 
 

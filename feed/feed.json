@@ -1,10 +1,10 @@
 {
 	"version": "https://jsonfeed.org/version/1.1",
-	"title": "Rifai&#39;s blog",
+	"title": "Ahmad Rifai | Mobile and Game developer",
 	"language": "en",
 	"home_page_url": "https://rifai.github.io/",
 	"feed_url": "https://rifai.github.io/feed/feed.json",
-	"description": "Personal blog of Rifai.",
+	"description": "Experienced mobile and game developer specializing in Godot Engine, Unity3D, Flutter and Android development. Browse my portfolio and contact me for app/game development projects.",
 	"author": {
 		"name": "Ahmad Rifai",
 		"url": "https://rifai.github.io/about-me/"

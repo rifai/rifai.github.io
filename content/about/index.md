@@ -9,10 +9,9 @@ eleventyNavigation:
 ## Hello, I'm Ahmad Rifai
 ### Mobile & Game Developer
 
-Welcome! I'm Ahmad Rifai, a Mobile & Game Developer with expertise in Flutter, Android (Java & Kotlin), Godot 3D, and Unity 3D. I craft engaging mobile experiences and captivating games.  
+Welcome to my profile! I'm Ahmad Rifai, an experienced Mobile and Game Developer specializing in Flutter, Android (Java & Kotlin), Godot Engine, and Unity 3D. With a passion for crafting engaging mobile experiences and captivating games.  
 
-I'm open for hiring.
-
+I'm ready to take on new challenges and projects. Explore my portfolio and let's connect!
 
 **Contact**:  
 📧 Email    : <arifai.dev@gmail.com>  

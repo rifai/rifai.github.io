@@ -1,6 +1,7 @@
 ---
 title: 'SocketException: OS Error: Connection refused, errno = 111'
-description: I got this weird error when developing flutter app in windows.
+description: "SocketException: OS Error: Connection refused, errno = 111 on Android emulator"
+summary: I got this weird error when developing flutter app in windows.
 date: 2020-07-04
 tags:
     - android

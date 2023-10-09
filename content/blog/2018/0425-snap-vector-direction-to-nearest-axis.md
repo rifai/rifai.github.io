@@ -1,6 +1,7 @@
 ---
 title: Snap vector direction to nearest axis.
-description: I have this case when I need to get my character direction is snapped to the nearest axis.
+summary:  I have this case when I need to get my character direction is snapped to the nearest axis.
+description:  How to find snapped vector to the nearest axis in Unity3D or Godot Engine
 date: 2018-04-25
 tags:
     - gamedev

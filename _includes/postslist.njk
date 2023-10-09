@@ -7,7 +7,11 @@
 		<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("d LLLL
 			yyyy")
 			}}</time>
-		<span>{{ post.data.description }}</span>
+			{% if post.data.summary %}
+			<span>{{ post.data.summary }}</span>
+			{% else %}
+			<span>{{ post.data.description }}</span>
+			{% endif %}
 
 	</li>
 	{% endfor %}

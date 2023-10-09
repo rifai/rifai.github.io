@@ -1,6 +1,7 @@
 ---
 title: Custom url domain in Xampp
-description: I got this weird error when developing flutter app in windows.
+summary:  If you are developing website in Xampp, you can use custom domain instead of localhost or 127.0.0.1.
+description: Custom url domain in Xampp
 date: 2020-07-04
 tags:
     - webdev

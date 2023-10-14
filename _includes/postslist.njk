@@ -16,3 +16,10 @@
 	</li>
 	{% endfor %}
 </ul>
+
+{% if pagination.href.previous %}
+  <a href="{{pagination.href.previous}}">Prev</a>
+{% endif %}
+{% if pagination.href.next %}
+  <a href="{{pagination.href.next}}">Next</a>
+{% endif %}

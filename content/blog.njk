@@ -5,6 +5,13 @@ layout: layouts/base.njk
 eleventyNavigation:
   key: Blog
   order: 2
+
+pagination:
+  data: collections.posts
+  size: 10
+  alias: posts
+
+permalink: "blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 ---
-{% set postslist = collections.posts %}
+{% set postslist = posts %}
 {% include "postslist.njk" %}

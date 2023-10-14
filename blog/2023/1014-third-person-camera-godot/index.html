@@ -17,9 +17,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-		<title>Git scenario 1 : Urgent bug report - Ahmad Rifai | Mobile and Game developer</title>
+		<title>Third person camera on Godot - Ahmad Rifai | Mobile and Game developer</title>
 		
-		<meta name="description" content="You&#39;re working on a software project and are in the middle of implementing a new feature in your branch.">
+		<meta name="description" content="Exploring Third-Person Shooters: A Guide to Creating a Third-Person Camera with Godot">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Ahmad Rifai | Mobile and Game developer">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Ahmad Rifai | Mobile and Game developer">
 		<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
@@ -548,53 +548,71 @@ h2+.header-anchor {
 
 		<main id="skip">
 			
-<h1>Git scenario 1 : Urgent bug report</h1>
+<h1>Third person camera on Godot</h1>
 
 <ul class="post-metadata">
 	<li><time datetime="2023-09-28">28 September 2023</time></li>
-	<li><a href="/tags/git/" class="post-tag">git</a></li>
+	<li><a href="/tags/godot/" class="post-tag">godot</a>, </li>
+	<li><a href="/tags/gamedev/" class="post-tag">gamedev</a></li>
 </ul>
 
-<p>You're working on a software project and are in the middle of implementing a new feature in your branch. However, you receive an urgent bug report that requires your immediate attention.<br>
-You don't want to commit your incomplete work, so you decide to use git stash to temporarily save your changes and switch to a different branch to fix the bug.</p>
-<h2 id="1-check-your-current-branch" tabindex="-1">1. Check your current branch: <a class="header-anchor" href="#1-check-your-current-branch">#</a></h2>
-<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> branch</code></pre>
-<p>Output:</p>
-<pre class="language-bash" tabindex="0"><code class="language-bash">* feature-branch
-master</code></pre>
-<p>You are currently on the <strong>feature-branch</strong>.</p>
-<h2 id="2-save-your-changes-to-a-stash" tabindex="-1">2. Save your changes to a stash: <a class="header-anchor" href="#2-save-your-changes-to-a-stash">#</a></h2>
-<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> stash save <span class="token string">"Work in progress on new feature"</span></code></pre>
-<p>This command stashes the changes with a descriptive message.</p>
-<h2 id="3-check-the-list-of-stashes" tabindex="-1">3. Check the list of stashes: <a class="header-anchor" href="#3-check-the-list-of-stashes">#</a></h2>
-<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> stash list</code></pre>
-<p>Output:</p>
-<pre class="language-bash" tabindex="0"><code class="language-bash">stash@<span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span>: On feature-branch: Work <span class="token keyword">in</span> progress on new feature</code></pre>
-<h2 id="4-switch-to-another-branch" tabindex="-1">4. Switch to another branch: <a class="header-anchor" href="#4-switch-to-another-branch">#</a></h2>
-<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> checkout bug-fix-branch</code></pre>
-<p>The developer is now on the <strong>bug-fix-branch</strong> to address the urgent bug.</p>
-<h2 id="5-fix-the-bug" tabindex="-1">5. Fix the bug: <a class="header-anchor" href="#5-fix-the-bug">#</a></h2>
-<pre class="language-c" tabindex="0"><code class="language-c"><span class="token comment">// Make necessary code changes to fix the bug</span></code></pre>
-<h2 id="6-commit-the-bug-fix" tabindex="-1">6. Commit the bug fix: <a class="header-anchor" href="#6-commit-the-bug-fix">#</a></h2>
-<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"Fixed the critical bug"</span></code></pre>
-<p>The bug is fixed, and the changes are committed.</p>
-<h2 id="7-switch-back-to-the-feature-branch" tabindex="-1">7. Switch back to the feature branch: <a class="header-anchor" href="#7-switch-back-to-the-feature-branch">#</a></h2>
-<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> checkout feature-branch</code></pre>
-<p>The developer returns to the <strong>feature-branch</strong>.</p>
-<h2 id="8-apply-the-stashed-changes" tabindex="-1">8. Apply the stashed changes: <a class="header-anchor" href="#8-apply-the-stashed-changes">#</a></h2>
-<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> stash apply stash@<span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span></code></pre>
-<p>The previously stashed changes are applied to the feature-branch. The developer can continue working on the new feature from where they left off.</p>
-<h2 id="9-check-the-status" tabindex="-1">9. Check the status: <a class="header-anchor" href="#9-check-the-status">#</a></h2>
-<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> status</code></pre>
-<p>The developer sees the unstashed changes and can proceed with feature development.</p>
+<p>The third-person shooter genre is undeniably popular in the world of gaming. To help you dive into this exciting genre, I've made a simple boilerplate code that demonstrates how to create a third-person camera using Godot, the powerful open source game engine.</p>
+<pre class="language-gdscript" tabindex="0"><code class="language-gdscript"><span class="token keyword">extends</span> <span class="token class-name">Camera3D</span>
 
-<ul class="links-nextprev"><li>Previous: <a href="/blog/2023/0928-frequenly-used-git-command/">Frequently used git command</a></li><li>Next: <a href="/blog/2023/1014-third-person-camera-godot/">Third person camera on Godot</a></li>
+
+@<span class="token keyword">export</span> 
+<span class="token keyword">var</span> _target<span class="token punctuation">:</span><span class="token class-name">Node3D</span> <span class="token comment"># your character</span>
+
+@<span class="token keyword">export</span>
+<span class="token keyword">var</span> _rotation_speed<span class="token punctuation">:</span><span class="token class-name">float</span> <span class="token operator">=</span> <span class="token number">0.003</span> <span class="token comment">#height above target</span>
+
+@<span class="token keyword">export</span>
+<span class="token keyword">var</span> _limit_x<span class="token punctuation">:</span><span class="token class-name">float</span> <span class="token operator">=</span> <span class="token number">60</span> <span class="token comment"># in degree</span>
+
+<span class="token keyword">var</span> _current_rot<span class="token punctuation">:</span><span class="token class-name">Vector3</span>
+<span class="token keyword">var</span> _distance<span class="token punctuation">:</span><span class="token class-name">float</span> <span class="token operator">=</span> <span class="token number">15</span>
+
+<span class="token keyword">func</span> <span class="token function">_ready</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    _current_rot <span class="token operator">=</span> rotation
+    <span class="token keyword">var</span> desired_position <span class="token operator">=</span> _target<span class="token punctuation">.</span>global_position <span class="token operator">+</span> <span class="token punctuation">(</span>quaternion <span class="token operator">*</span> <span class="token function">Vector3</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> _distance<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    global_position <span class="token operator">=</span> desired_position
+    <span class="token function">_show_pointer</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">_input</span><span class="token punctuation">(</span>event<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> _target <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span>
+        
+    <span class="token keyword">if</span> event <span class="token keyword">is</span> InputEventMouseMotion<span class="token punctuation">:</span>
+        <span class="token keyword">var</span> input_pos <span class="token operator">=</span> event<span class="token punctuation">.</span>relative
+        <span class="token function">_update_rotation</span><span class="token punctuation">(</span>input_pos<span class="token punctuation">.</span>x <span class="token operator">*</span> _rotation_speed<span class="token punctuation">,</span> input_pos<span class="token punctuation">.</span>y <span class="token operator">*</span> _rotation_speed<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">_update_rotation</span><span class="token punctuation">(</span>input_x<span class="token punctuation">:</span><span class="token class-name">float</span><span class="token punctuation">,</span> input_y<span class="token punctuation">:</span><span class="token class-name">float</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">var</span> rotation_x <span class="token operator">=</span> _current_rot<span class="token punctuation">.</span>x <span class="token operator">-</span> input_y
+    <span class="token keyword">var</span> limit <span class="token operator">=</span> <span class="token function">deg_to_rad</span><span class="token punctuation">(</span>_limit_x<span class="token punctuation">)</span>
+
+    _current_rot<span class="token punctuation">.</span>x <span class="token operator">=</span> <span class="token function">clampf</span><span class="token punctuation">(</span>rotation_x<span class="token punctuation">,</span> <span class="token operator">-</span>limit<span class="token punctuation">,</span> limit<span class="token punctuation">)</span>
+    _current_rot<span class="token punctuation">.</span>y <span class="token operator">=</span> _current_rot<span class="token punctuation">.</span>y <span class="token operator">-</span> input_x<span class="token punctuation">;</span>
+
+    rotation <span class="token operator">=</span> _current_rot
+    <span class="token keyword">var</span> desired_position <span class="token operator">=</span> _target<span class="token punctuation">.</span>global_position <span class="token operator">+</span> <span class="token punctuation">(</span>quaternion <span class="token operator">*</span> <span class="token function">Vector3</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> _distance<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    global_position <span class="token operator">=</span> desired_position
+
+<span class="token keyword">func</span> <span class="token function">_show_pointer</span><span class="token punctuation">(</span>show_pointer<span class="token punctuation">:</span><span class="token class-name">bool</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> show_pointer<span class="token punctuation">:</span>
+        Input<span class="token punctuation">.</span><span class="token function">set_mouse_mode</span><span class="token punctuation">(</span>Input<span class="token punctuation">.</span><span class="token constant">MOUSE_MODE_VISIBLE</span><span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        Input<span class="token punctuation">.</span><span class="token function">set_mouse_mode</span><span class="token punctuation">(</span>Input<span class="token punctuation">.</span><span class="token constant">MOUSE_MODE_CAPTURED</span><span class="token punctuation">)</span></code></pre>
+<p>You can access the code and resources <a href="https://github.com/rifai/godot-boilerplate">here</a>.</p>
+<p>But that's not all - my commitment to your game development journey goes beyond this code. In the future, I'll continue to expand this resource with the most common game features and Godot capabilities. This will serve as a valuable repository for all your reusable game development needs.</p>
+
+<ul class="links-nextprev"><li>Previous: <a href="/blog/2023/0929-common-git-scenario/">Git scenario 1 : Urgent bug report</a></li>
 </ul>
 
 		</main>
 
 		<footer></footer>
 
-		<!-- Current page: /blog/2023/0929-common-git-scenario/ -->
+		<!-- Current page: /blog/2023/1014-third-person-camera-godot/ -->
 	</body>
 </html>

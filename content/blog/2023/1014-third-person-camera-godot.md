@@ -2,7 +2,7 @@
 title: "Third person camera on Godot"
 description:  "Exploring Third-Person Shooters: A Guide to Creating a Third-Person Camera with Godot"
 summary: The third-person shooter genre is undeniably popular in the world of gaming.
-date: 2023-09-28
+date: 2023-10-14
 tags:
     - godot
     - gamedev

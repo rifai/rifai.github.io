@@ -1,7 +1,7 @@
 ---
 title: "Git scenario 1 : Urgent bug report"
 description: You're working on a software project and are in the middle of implementing a new feature in your branch.
-date: 2023-09-28
+date: 2023-09-29
 tags:
 	- git
 ---

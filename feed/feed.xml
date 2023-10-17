@@ -4,7 +4,7 @@
 	<subtitle>Experienced mobile and game developer specializing in Godot Engine, Unity3D, Flutter and Android development. Browse my portfolio and contact me for app/game development projects.</subtitle>
 	<link href="https://rifai.id/feed/feed.xml" rel="self"/>
 	<link href="https://rifai.id/"/>
-	<updated>2023-09-28T00:00:00Z</updated>
+	<updated>2023-10-14T00:00:00Z</updated>
 	<id>https://rifai.id/</id>
 	<author>
 		<name>Ahmad Rifai</name>
@@ -14,7 +14,7 @@
 	<entry>
 		<title>Third person camera on Godot</title>
 		<link href="https://rifai.id/blog/2023/1014-third-person-camera-godot/"/>
-		<updated>2023-09-28T00:00:00Z</updated>
+		<updated>2023-10-14T00:00:00Z</updated>
 		<id>https://rifai.id/blog/2023/1014-third-person-camera-godot/</id>
 		<content type="html">&lt;p&gt;The third-person shooter genre is undeniably popular in the world of gaming. To help you dive into this exciting genre, I&#39;ve made a simple boilerplate code that demonstrates how to create a third-person camera using Godot, the powerful open source game engine.&lt;/p&gt;
 &lt;pre class=&quot;language-gdscript&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-gdscript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Camera3D&lt;/span&gt;
@@ -71,7 +71,7 @@
 	<entry>
 		<title>Git scenario 1 : Urgent bug report</title>
 		<link href="https://rifai.id/blog/2023/0929-common-git-scenario/"/>
-		<updated>2023-09-28T00:00:00Z</updated>
+		<updated>2023-09-29T00:00:00Z</updated>
 		<id>https://rifai.id/blog/2023/0929-common-git-scenario/</id>
 		<content type="html">&lt;p&gt;You&#39;re working on a software project and are in the middle of implementing a new feature in your branch. However, you receive an urgent bug report that requires your immediate attention.&lt;br&gt;
 You don&#39;t want to commit your incomplete work, so you decide to use git stash to temporarily save your changes and switch to a different branch to fix the bug.&lt;/p&gt;

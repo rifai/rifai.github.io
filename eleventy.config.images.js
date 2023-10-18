@@ -1,5 +1,6 @@
 const path = require("path");
 const eleventyImage = require("@11ty/eleventy-img");
+const metadata = require("./_data/metadata");
 
 module.exports = eleventyConfig => {
 	function relativeToInputPath(inputPath, relativeFilePath) {
@@ -34,8 +35,9 @@ module.exports = eleventyConfig => {
 	
 	eleventyConfig.addShortcode(
 		"video", (src) => {
+			var fullSrc = metadata.assets+src
 			return `<video controls>
-				<source src="${src}" type="video/mp4">
+				<source src="${fullSrc}" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>`;
 		}

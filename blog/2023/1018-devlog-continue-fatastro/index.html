@@ -17,14 +17,181 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-		<title>Ahmad Rifai | Mobile and Game developer</title>
+		<title>Devlog #1 : Reviving Fat Astro - Ahmad Rifai | Mobile and Game developer</title>
 		
-		<meta name="description" content="Experienced mobile and game developer specializing in Godot Engine, Unity3D, Flutter and Android development. Browse my portfolio and contact me for app/game development projects.">
+		<meta name="description" content="Reviving &#39;Fat Astro&#39;: A Game Prototype Reimagined with Godot Engine">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Ahmad Rifai | Mobile and Game developer">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Ahmad Rifai | Mobile and Game developer">
 		<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 		
-		<style>.postlist { counter-reset: start-from 10 }
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
 * { box-sizing: border-box; }
 /* Defaults */
 :root {
@@ -375,7 +542,7 @@ h2+.header-anchor {
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/blog/">Blog</a></li>
 					<li class="nav-item"><a href="/works/">Works</a></li>
 					<li class="nav-item"><a href="/games/">Games</a></li>
@@ -385,76 +552,30 @@ h2+.header-anchor {
 		</header>
 
 		<main id="skip">
-			<p>Welcome! I'm Ahmad Rifai, a Mobile &amp; Game Developer</p>
-<h1 id="latest-posts" tabindex="-1">Latest Posts <a class="header-anchor" href="#latest-posts">#</a></h1>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2023-10-18">18 Oct
-2023</time>
-<a href="/blog/2023/1018-devlog-continue-fatastro/">
-<h2>Devlog #1 : Reviving Fat Astro  </h2>
-</a>
-</article></p>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2023-10-14">14 Oct
-2023</time>
-<a href="/blog/2023/1014-third-person-camera-godot/">
-<h2>Third person camera on Godot  </h2>
-</a>
-</article></p>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2023-09-29">29 Sep
-2023</time>
-<a href="/blog/2023/0929-common-git-scenario/">
-<h2>Git scenario 1 : Urgent bug report  </h2>
-</a>
-</article></p>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2023-09-28">28 Sep
-2023</time>
-<a href="/blog/2023/0928-frequenly-used-git-command/">
-<h2>Frequently used git command  </h2>
-</a>
-</article></p>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2023-09-21">21 Sep
-2023</time>
-<a href="/blog/2023/0921-hello-world/">
-<h2>Hello world.  </h2>
-</a>
-</article></p>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2020-07-04">04 Jul
-2020</time>
-<a href="/blog/2021/0905-fat-astro/">
-<h2>Protoype Demo - Fat Astro  </h2>
-</a>
-</article></p>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2020-07-04">04 Jul
-2020</time>
-<a href="/blog/2020/0704-custom-url-domain-xampp/">
-<h2>Custom url domain in Xampp  </h2>
-</a>
-</article></p>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2020-07-04">04 Jul
-2020</time>
-<a href="/blog/2020/0704-connection-refused-errno-111/">
-<h2>SocketException: OS Error: Connection refused, errno = 111  </h2>
-</a>
-</article></p>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2018-04-25">25 Apr
-2018</time>
-<a href="/blog/2018/0425-snap-vector-direction-to-nearest-axis/">
-<h2>Snap vector direction to nearest axis.  </h2>
-</a>
-</article></p>
+			
+<h1>Devlog #1 : Reviving Fat Astro</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2023-10-18">18 October 2023</time></li>
+	<li><a href="/tags/godot/" class="post-tag">godot</a>, </li>
+	<li><a href="/tags/gamedev/" class="post-tag">gamedev</a></li>
+</ul>
+
+<p>Five years ago, I introduced the prototype game 'Fat Astro,' a unique blend of gaming elements inspired by 'Boxboy' and 'Captain Toad'. Today, I decided to continue the game, this time harnessing the power of Godot Engine.</p>
+<p>The previous game engine had become stagnant, leading me to explore the most promising open-source alternative available. This week, I've made basic character movement and walking mechanics. While there may not be much gameplay to showcase at this moment, here's a sneak peek of the progress.</p>
+<video controls>
+				<source src="https://rifai.id/public-assets/video/fat-movement.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+<p>I promise will update the progress more frequently.</p>
+
+<ul class="links-nextprev"><li>Previous: <a href="/blog/2023/1014-third-person-camera-godot/">Third person camera on Godot</a></li>
+</ul>
 
 		</main>
 
 		<footer></footer>
 
-		<!-- Current page: / -->
+		<!-- Current page: /blog/2023/1018-devlog-continue-fatastro/ -->
 	</body>
 </html>

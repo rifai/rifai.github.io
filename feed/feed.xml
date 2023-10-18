@@ -4,12 +4,27 @@
 	<subtitle>Experienced mobile and game developer specializing in Godot Engine, Unity3D, Flutter and Android development. Browse my portfolio and contact me for app/game development projects.</subtitle>
 	<link href="https://rifai.id/feed/feed.xml" rel="self"/>
 	<link href="https://rifai.id/"/>
-	<updated>2023-10-14T00:00:00Z</updated>
+	<updated>2023-10-18T00:00:00Z</updated>
 	<id>https://rifai.id/</id>
 	<author>
 		<name>Ahmad Rifai</name>
 		<email>arifai.dev@gmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Devlog #1 : Reviving Fat Astro</title>
+		<link href="https://rifai.id/blog/2023/1018-devlog-continue-fatastro/"/>
+		<updated>2023-10-18T00:00:00Z</updated>
+		<id>https://rifai.id/blog/2023/1018-devlog-continue-fatastro/</id>
+		<content type="html">&lt;p&gt;Five years ago, I introduced the prototype game &#39;Fat Astro,&#39; a unique blend of gaming elements inspired by &#39;Boxboy&#39; and &#39;Captain Toad&#39;. Today, I decided to continue the game, this time harnessing the power of Godot Engine.&lt;/p&gt;
+&lt;p&gt;The previous game engine had become stagnant, leading me to explore the most promising open-source alternative available. This week, I&#39;ve made basic character movement and walking mechanics. While there may not be much gameplay to showcase at this moment, here&#39;s a sneak peek of the progress.&lt;/p&gt;
+&lt;video controls=&quot;&quot;&gt;
+				&lt;source src=&quot;https://rifai.id/public-assets/video/fat-movement.mp4&quot; type=&quot;video/mp4&quot;&gt;
+				Your browser does not support the video tag.
+			&lt;/video&gt;
+&lt;p&gt;I promise will update the progress more frequently.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Third person camera on Godot</title>

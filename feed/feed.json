@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://rifai.id/blog/2023/1018-devlog-continue-fatastro/",
+			"url": "https://rifai.id/blog/2023/1018-devlog-continue-fatastro/",
+			"title": "Devlog #1 : Reviving Fat Astro",
+			"content_html": "<p>Five years ago, I introduced the prototype game 'Fat Astro,' a unique blend of gaming elements inspired by 'Boxboy' and 'Captain Toad'. Today, I decided to continue the game, this time harnessing the power of Godot Engine.</p>\n<p>The previous game engine had become stagnant, leading me to explore the most promising open-source alternative available. This week, I've made basic character movement and walking mechanics. While there may not be much gameplay to showcase at this moment, here's a sneak peek of the progress.</p>\n<video controls=\"\">\n\t\t\t\t<source src=\"https://rifai.id/public-assets/video/fat-movement.mp4\" type=\"video/mp4\">\n\t\t\t\tYour browser does not support the video tag.\n\t\t\t</video>\n<p>I promise will update the progress more frequently.</p>\n",
+			"date_published": "2023-10-18T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://rifai.id/blog/2023/1014-third-person-camera-godot/",
 			"url": "https://rifai.id/blog/2023/1014-third-person-camera-godot/",
 			"title": "Third person camera on Godot",

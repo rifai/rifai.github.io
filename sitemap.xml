@@ -97,6 +97,11 @@
 	</url>
 	
 	<url>
+		<loc>https://rifai.id/blog/2023/1020-using-godot-with-vscode/</loc>
+		<lastmod>2023-10-20</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://rifai.id/about/</loc>
 		<lastmod>2023-10-20</lastmod>
 	</url>
@@ -162,6 +167,11 @@
 	</url>
 	
 	<url>
+		<loc>https://rifai.id/tags/gamedev/</loc>
+		<lastmod>2023-10-20</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://rifai.id/tags/works/</loc>
 		<lastmod>2023-10-20</lastmod>
 	</url>
@@ -178,11 +188,6 @@
 	
 	<url>
 		<loc>https://rifai.id/tags/android/</loc>
-		<lastmod>2023-10-20</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://rifai.id/tags/gamedev/</loc>
 		<lastmod>2023-10-20</lastmod>
 	</url>
 	

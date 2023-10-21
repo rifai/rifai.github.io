@@ -1,6 +1,6 @@
 ---
 title: Programming and debugging godot with Visual Studio Code
-description:  UEnhance Your Godot Programming Experience with Visual Studio Code (VSCode)
+description: Enhance Your Godot Programming Experience with Visual Studio Code (VSCode)
 summary: Visual Studio Code, often referred to as VSCode, is undeniably one of the most popular code editors. 
 date: 2023-10-20
 tags:

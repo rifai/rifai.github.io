@@ -17,9 +17,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-		<title>Programming and debugging godot with Visual Studio Code - Ahmad Rifai | Mobile and Game developer</title>
+		<title>Djamal - Ahmad Rifai | Mobile and Game developer</title>
 		
-		<meta name="description" content="Enhance Your Godot Programming Experience with Visual Studio Code (VSCode)">
+		<meta name="description" content="Experienced mobile and game developer specializing in Godot Engine, Unity3D, Flutter and Android development. Browse my portfolio and contact me for app/game development projects.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Ahmad Rifai | Mobile and Game developer">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Ahmad Rifai | Mobile and Game developer">
 		<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
@@ -557,74 +557,34 @@ h2+.header-anchor {
 
 		<main id="skip">
 			
-<h1>Programming and debugging godot with Visual Studio Code</h1>
+<h1>Djamal</h1>
 
 <ul class="post-metadata">
-	<li><time datetime="2023-10-20">20 October 2023</time></li>
-	<li><a href="/tags/godot/" class="post-tag">godot</a>, </li>
-	<li><a href="/tags/gamedev/" class="post-tag">gamedev</a></li>
+	<li><time datetime="2014-01-01">01 January 2014</time></li>
+	<li><a href="/tags/games/" class="post-tag">games</a>, </li>
+	<li><a href="/tags/unity3d/" class="post-tag">unity3d</a></li>
 </ul>
 
-<p>Visual Studio Code, often referred to as VSCode, is undeniably one of the most popular code editors. I personally rely on it for my daily work. However, when it comes to Godot, while the engine has its own editor, I don't like it much.</p>
-<p>The good news is, you can seamlessly integrate Godot with Visual Studio Code. In this post, I'll walk you through the process of changing the default text editor to VSCode for your Godot projects. Not only that, but I'll also show you how to enable debugging and breakpoints within VSCode.</p>
-<p>Let's get started!</p>
-<h1 id="godot" tabindex="-1">Godot <a class="header-anchor" href="#godot">#</a></h1>
-<p>Please note that this tutorial is intended for use with Godot 4.1.2, the latest stable version available at the time of writing.</p>
-<p>To integrate an external code editor like Visual Studio Code (VSCode) with Godot, follow these steps:</p>
-<ol>
-<li>Open Godot Engine and navigate to <strong>Editor</strong> &gt; <strong>Editor Settings.</strong></li>
-<li>Under <strong>Text Editor,</strong> enable <strong>Use External Editor.</strong></li>
-<li>Specify the <strong>Exec Path</strong> to your VSCode installation.</li>
-<li>For <strong>Exec Flags,</strong> input: {project} --goto {file}:{line}:{col}</li>
-</ol>
-<p><picture><source type="image/avif" srcset="/img/3nA9HLj0M0-960.avif 960w"><source type="image/webp" srcset="/img/3nA9HLj0M0-960.webp 960w"><img alt="Godot Editor Settings" loading="lazy" class="img-responsive" decoding="async" src="/img/3nA9HLj0M0-960.jpeg" width="960" height="786"></picture></p>
-<p>Still in <strong>Editor Settings,</strong> proceed to <strong>Network</strong> &gt; <strong>Language Server.</strong> Locate <strong>Remote Port</strong> and ensure it's set to <strong>6005.</strong> This port value will be used in another setting within VSCode.</p>
-<h1 id="vscode" tabindex="-1">VSCode <a class="header-anchor" href="#vscode">#</a></h1>
-<ol>
-<li>Begin by installing the <strong>godot-tools</strong> extension in Visual Studio Code.</li>
-<li>Open VSCode and go to <strong>File</strong> &gt; <strong>Preferences</strong> &gt; <strong>Settings</strong>.</li>
-<li>Under <strong>User</strong>, look for <strong>Extensions</strong> and click on <strong>Godot Tools configuration</strong>.</li>
-<li>Here, you'll find 'Gdscript_lsp_server_port.' Set this to <strong>6005</strong>.</li>
-</ol>
-<p><picture><source type="image/avif" srcset="/img/fGQNK0aoMf-960.avif 960w"><source type="image/webp" srcset="/img/fGQNK0aoMf-960.webp 960w"><img alt="Godot VSCode Autocomplete" loading="lazy" class="img-responsive" decoding="async" src="/img/fGQNK0aoMf-960.jpeg" width="960" height="419"></picture></p>
-<p>That's it! You've successfully configured VSCode to serve as your primary editor for Godot.&quot;</p>
-<h1 id="debugging" tabindex="-1">Debugging <a class="header-anchor" href="#debugging">#</a></h1>
-<ol>
-<li>Open VSCode.</li>
-<li>Navigate to the 'Run and Debug' section.</li>
-<li>Click on 'Create a launch.json file.'</li>
-<li>Select 'GDScript Godot Debug.'</li>
-</ol>
-<p>This action will generate a 'launch.json' file in the '.vscode' folder located within your project directory.</p>
-<p>Now, copy and paste the provided code into your <strong>launch.json</strong> file.&quot;</p>
-<pre class="language-json" tabindex="0"><code class="language-json"><span class="token punctuation">{</span>
-	<span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"0.2.0"</span><span class="token punctuation">,</span>
-	<span class="token property">"configurations"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-		<span class="token punctuation">{</span>
-			<span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Godot"</span><span class="token punctuation">,</span>
-			<span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"godot"</span><span class="token punctuation">,</span>
-			<span class="token property">"request"</span><span class="token operator">:</span> <span class="token string">"launch"</span><span class="token punctuation">,</span>
-			<span class="token property">"project"</span><span class="token operator">:</span> <span class="token string">"${workspaceFolder}"</span><span class="token punctuation">,</span>
-			<span class="token property">"port"</span><span class="token operator">:</span> <span class="token number">6006</span><span class="token punctuation">,</span>
-			<span class="token property">"debugServer"</span><span class="token operator">:</span> <span class="token number">6006</span><span class="token punctuation">,</span>
-			<span class="token property">"address"</span><span class="token operator">:</span> <span class="token string">"127.0.0.1"</span><span class="token punctuation">,</span>
-			<span class="token property">"launch_game_instance"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-			<span class="token property">"launch_scene"</span><span class="token operator">:</span> <span class="token boolean">false</span>
-		  <span class="token punctuation">}</span>
-	<span class="token punctuation">]</span>
-<span class="token punctuation">}</span></code></pre>
-<p>Once you've ensured everything is correctly set up, you can initiate breakpoints and debugging with a simple press of <strong>F5</strong>.</p>
-<p><picture><source type="image/avif" srcset="/img/6YeBzx5AWH-960.avif 960w"><source type="image/webp" srcset="/img/6YeBzx5AWH-960.webp 960w"><img alt="Godot VSCode Autocomplete" loading="lazy" class="img-responsive" decoding="async" src="/img/6YeBzx5AWH-960.jpeg" width="960" height="458"></picture></p>
-<p>It's worth noting that in the future, Godot may update their extension for easier setup process. Until then, this workaround has been tried and tested, providing an effective solution.</p>
-<p>If you have any questions or need further assistance, feel free to email me at <a href="mailto:arifai.dev@gmail.com">arifai.dev@gmail.com</a></p>
-
-<ul class="links-nextprev"><li>Previous: <a href="/blog/2023/1018-devlog-continue-fatastro/">Devlog #1 : Reviving Fat Astro</a></li>
+<div id="yVtO8Wbrzg4" class="eleventy-plugin-youtube-embed" style="position:relative;width:100%;padding-top: 56.25%;"><iframe style="position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;" width="100%" height="100%" frameborder="0" title="Embedded YouTube video" src="https://www.youtube-nocookie.com/embed/yVtO8Wbrzg4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p><strong>Description</strong> :<br>
+DJAMAL is an experimental demo game with a point-and-click adventure concept. Djamal was made for local game competition. This game achieved 2nd place in the Animation Game category at the ACFFEST 2013 event organized by KPK</p>
+<p><strong>Released</strong> : 2013</p>
+<p><strong>Platform</strong> :</p>
+<ul>
+<li>PC</li>
 </ul>
+<p><strong>Technology Used</strong> :</p>
+<ul>
+<li>Unity3D</li>
+</ul>
+<p><strong>Role</strong> :<br>
+My role as a gameplay programmer within the Unity3D environment encompasses a diverse array of responsibilities. I'm deeply involved in crafting and fine-tuning gameplay features.</p>
+
 
 		</main>
 
 		<footer></footer>
 
-		<!-- Current page: /blog/2023/1020-using-godot-with-vscode/ -->
+		<!-- Current page: /games/2013-djamal/ -->
 	</body>
 </html>

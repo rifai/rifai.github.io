@@ -4,12 +4,33 @@
 	<subtitle>Experienced mobile and game developer specializing in Godot Engine, Unity3D, Flutter and Android development. Browse my portfolio and contact me for app/game development projects.</subtitle>
 	<link href="https://rifai.id/feed/feed.xml" rel="self"/>
 	<link href="https://rifai.id/"/>
-	<updated>2023-10-20T00:00:00Z</updated>
+	<updated>2023-10-22T00:00:00Z</updated>
 	<id>https://rifai.id/</id>
 	<author>
 		<name>Ahmad Rifai</name>
 		<email>arifai.dev@gmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Unity Development with Visual Studio Code</title>
+		<link href="https://rifai.id/blog/2023/1022-using-unity-with-vscode/"/>
+		<updated>2023-10-22T00:00:00Z</updated>
+		<id>https://rifai.id/blog/2023/1022-using-unity-with-vscode/</id>
+		<content type="html">&lt;p&gt;Unity&#39;s default Integrated Development Environment (IDE) is Visual Studio, but as I mentioned in a &lt;a href=&quot;https://rifai.id/blog/2023/1020-using-godot-with-vscode&quot;&gt;previous post&lt;/a&gt;, I prefer Visual Studio Code (VSCode) for its efficiency.&lt;/p&gt;
+&lt;p&gt;I&#39;ve found that using Visual Studio only for Unity projects can be a bit overkill, and it can consume significant storage. In contrast, VSCode is much lighter, making it an excellent choice for Unity3D.&lt;/p&gt;
+&lt;p&gt;To make the switch, follow these steps:&lt;/p&gt;
+&lt;h1 id=&quot;unity&quot; tabindex=&quot;-1&quot;&gt;Unity &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.id/blog/2023/1022-using-unity-with-vscode/&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Open Unity &lt;strong&gt;Preferences&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Under &lt;strong&gt;External Tools&lt;/strong&gt;, select &lt;strong&gt;Visual Studio Code&lt;/strong&gt; as your &lt;strong&gt;External Script Editor&lt;/strong&gt;.
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://rifai.id/img/DT321BJz3G-938.avif 938w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://rifai.id/img/DT321BJz3G-938.webp 938w&quot;&gt;&lt;img alt=&quot;Unity Preference&quot; loading=&quot;lazy&quot; class=&quot;img-responsive&quot; decoding=&quot;async&quot; src=&quot;https://rifai.id/img/DT321BJz3G-938.png&quot; width=&quot;938&quot; height=&quot;580&quot;&gt;&lt;/picture&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;vscode&quot; tabindex=&quot;-1&quot;&gt;VSCode &lt;a class=&quot;header-anchor&quot; href=&quot;https://rifai.id/blog/2023/1022-using-unity-with-vscode/&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Install the Unity extension from Microsoft at &lt;a href=&quot;https://aka.ms/vscode-unity&quot;&gt;https://aka.ms/vscode-unity&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;With these adjustments, you&#39;re all set to start editing with Visual Studio Code.&lt;br&gt;
+Should you have any questions or need assistance, please feel free to email me at &lt;a href=&quot;mailto:arifai.dev@gmail.com&quot;&gt;arifai.dev@gmail.com&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Programming and debugging godot with Visual Studio Code</title>

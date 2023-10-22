@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://rifai.id/blog/2023/1022-using-unity-with-vscode/",
+			"url": "https://rifai.id/blog/2023/1022-using-unity-with-vscode/",
+			"title": "Unity Development with Visual Studio Code",
+			"content_html": "<p>Unity's default Integrated Development Environment (IDE) is Visual Studio, but as I mentioned in a <a href=\"https://rifai.id/blog/2023/1020-using-godot-with-vscode\">previous post</a>, I prefer Visual Studio Code (VSCode) for its efficiency.</p>\n<p>I've found that using Visual Studio only for Unity projects can be a bit overkill, and it can consume significant storage. In contrast, VSCode is much lighter, making it an excellent choice for Unity3D.</p>\n<p>To make the switch, follow these steps:</p>\n<h1 id=\"unity\" tabindex=\"-1\">Unity <a class=\"header-anchor\" href=\"https://rifai.id/blog/2023/1022-using-unity-with-vscode/\">#</a></h1>\n<ol>\n<li>Open Unity <strong>Preferences</strong>.</li>\n<li>Under <strong>External Tools</strong>, select <strong>Visual Studio Code</strong> as your <strong>External Script Editor</strong>.\n<picture><source type=\"image/avif\" srcset=\"https://rifai.id/img/DT321BJz3G-938.avif 938w\"><source type=\"image/webp\" srcset=\"https://rifai.id/img/DT321BJz3G-938.webp 938w\"><img alt=\"Unity Preference\" loading=\"lazy\" class=\"img-responsive\" decoding=\"async\" src=\"https://rifai.id/img/DT321BJz3G-938.png\" width=\"938\" height=\"580\"></picture></li>\n</ol>\n<h1 id=\"vscode\" tabindex=\"-1\">VSCode <a class=\"header-anchor\" href=\"https://rifai.id/blog/2023/1022-using-unity-with-vscode/\">#</a></h1>\n<p>Install the Unity extension from Microsoft at <a href=\"https://aka.ms/vscode-unity\">https://aka.ms/vscode-unity</a>.</p>\n<p>With these adjustments, you're all set to start editing with Visual Studio Code.<br>\nShould you have any questions or need assistance, please feel free to email me at <a href=\"mailto:arifai.dev@gmail.com\">arifai.dev@gmail.com</a></p>\n",
+			"date_published": "2023-10-22T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://rifai.id/blog/2023/1020-using-godot-with-vscode/",
 			"url": "https://rifai.id/blog/2023/1020-using-godot-with-vscode/",
 			"title": "Programming and debugging godot with Visual Studio Code",

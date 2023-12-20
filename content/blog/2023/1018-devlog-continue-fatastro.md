@@ -6,6 +6,7 @@ date: 2023-10-18
 tags:
     - godot
     - gamedev
+    - devlog
 ---
 
 Five years ago, I introduced the prototype game 'Fat Astro,' a unique blend of gaming elements inspired by 'Boxboy' and 'Captain Toad'. Today, I decided to continue the game, this time harnessing the power of Godot Engine.

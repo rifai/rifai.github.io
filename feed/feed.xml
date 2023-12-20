@@ -4,12 +4,25 @@
 	<subtitle>Experienced mobile and game developer specializing in Godot Engine, Unity3D, Flutter and Android development. Browse my portfolio and contact me for app/game development projects.</subtitle>
 	<link href="https://rifai.id/feed/feed.xml" rel="self"/>
 	<link href="https://rifai.id/"/>
-	<updated>2023-10-22T00:00:00Z</updated>
+	<updated>2023-12-19T00:00:00Z</updated>
 	<id>https://rifai.id/</id>
 	<author>
 		<name>Ahmad Rifai</name>
 		<email>arifai.dev@gmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Prototype of RC style game</title>
+		<link href="https://rifai.id/blog/2023/1219-prototype-rc-game/"/>
+		<updated>2023-12-19T00:00:00Z</updated>
+		<id>https://rifai.id/blog/2023/1219-prototype-rc-game/</id>
+		<content type="html">&lt;p&gt;I&#39;m working on new arcade style car racing inspired by classic PS1 games like RC de Go! and Crash Team Racing. After some challenges with vehicle physics in Godot, I opted for Rigidbody3D over VehicleBody3D, and I&#39;m pleased with the results. Check out this video demo of the game in action!&lt;/p&gt;
+&lt;video controls=&quot;&quot;&gt;
+				&lt;source src=&quot;https://rifai.id/public-assets/video/rc-prototype.mp4&quot; type=&quot;video/mp4&quot;&gt;
+				Your browser does not support the video tag.
+			&lt;/video&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Unity Development with Visual Studio Code</title>

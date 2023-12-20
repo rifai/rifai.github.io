@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://rifai.id/blog/2023/1219-prototype-rc-game/",
+			"url": "https://rifai.id/blog/2023/1219-prototype-rc-game/",
+			"title": "Prototype of RC style game",
+			"content_html": "<p>I'm working on new arcade style car racing inspired by classic PS1 games like RC de Go! and Crash Team Racing. After some challenges with vehicle physics in Godot, I opted for Rigidbody3D over VehicleBody3D, and I'm pleased with the results. Check out this video demo of the game in action!</p>\n<video controls=\"\">\n\t\t\t\t<source src=\"https://rifai.id/public-assets/video/rc-prototype.mp4\" type=\"video/mp4\">\n\t\t\t\tYour browser does not support the video tag.\n\t\t\t</video>\n",
+			"date_published": "2023-12-19T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://rifai.id/blog/2023/1022-using-unity-with-vscode/",
 			"url": "https://rifai.id/blog/2023/1022-using-unity-with-vscode/",
 			"title": "Unity Development with Visual Studio Code",

@@ -4,12 +4,34 @@
 	<subtitle>Experienced mobile and game developer specializing in Godot Engine, Unity3D, Flutter and Android development. Browse my portfolio and contact me for app/game development projects.</subtitle>
 	<link href="https://rifai.id/feed/feed.xml" rel="self"/>
 	<link href="https://rifai.id/"/>
-	<updated>2023-12-19T00:00:00Z</updated>
+	<updated>2024-11-10T00:00:00Z</updated>
 	<id>https://rifai.id/</id>
 	<author>
 		<name>Ahmad Rifai</name>
 		<email>arifai.dev@gmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Git command to remove branches without remote upstream</title>
+		<link href="https://rifai.id/blog/2024/0928-frequenly-used-git-command/"/>
+		<updated>2024-11-10T00:00:00Z</updated>
+		<id>https://rifai.id/blog/2024/0928-frequenly-used-git-command/</id>
+		<content type="html">&lt;p&gt;If you want to delete local branches that no longer have an upstream branch on the remote, you can use the following Git command&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token shebang important&quot;&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# Fetch the latest information about remote branches&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; fetch &lt;span class=&quot;token parameter variable&quot;&gt;--all&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;--prune&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# List all local branches&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token for-or-select variable&quot;&gt;branch&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; branch &lt;span class=&quot;token parameter variable&quot;&gt;--format&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;%(refname:short)&#39;&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# Check if the branch has a corresponding remote branch&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; show-ref &lt;span class=&quot;token parameter variable&quot;&gt;--verify&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;--quiet&lt;/span&gt; refs/remotes/origin/&lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$branch&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+        &lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Deleting branch: &lt;span class=&quot;token variable&quot;&gt;$branch&lt;/span&gt;&quot;&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; branch &lt;span class=&quot;token parameter variable&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$branch&lt;/span&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Prototype of RC style game</title>

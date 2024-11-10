@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://rifai.id/blog/2024/0928-frequenly-used-git-command/",
+			"url": "https://rifai.id/blog/2024/0928-frequenly-used-git-command/",
+			"title": "Git command to remove branches without remote upstream",
+			"content_html": "<p>If you want to delete local branches that no longer have an upstream branch on the remote, you can use the following Git command</p>\n<pre class=\"language-bash\" tabindex=\"0\"><code class=\"language-bash\"><span class=\"token shebang important\">#!/bin/bash</span>\n\n<span class=\"token comment\"># Fetch the latest information about remote branches</span>\n<span class=\"token function\">git</span> fetch <span class=\"token parameter variable\">--all</span> <span class=\"token parameter variable\">--prune</span>\n\n<span class=\"token comment\"># List all local branches</span>\n<span class=\"token keyword\">for</span> <span class=\"token for-or-select variable\">branch</span> <span class=\"token keyword\">in</span> <span class=\"token variable\"><span class=\"token variable\">$(</span><span class=\"token function\">git</span> branch <span class=\"token parameter variable\">--format</span><span class=\"token operator\">=</span><span class=\"token string\">'%(refname:short)'</span><span class=\"token variable\">)</span></span><span class=\"token punctuation\">;</span> <span class=\"token keyword\">do</span>\n    <span class=\"token comment\"># Check if the branch has a corresponding remote branch</span>\n    <span class=\"token keyword\">if</span> <span class=\"token operator\">!</span> <span class=\"token function\">git</span> show-ref <span class=\"token parameter variable\">--verify</span> <span class=\"token parameter variable\">--quiet</span> refs/remotes/origin/<span class=\"token string\">\"<span class=\"token variable\">$branch</span>\"</span><span class=\"token punctuation\">;</span> <span class=\"token keyword\">then</span>\n        <span class=\"token builtin class-name\">echo</span> <span class=\"token string\">\"Deleting branch: <span class=\"token variable\">$branch</span>\"</span>\n        <span class=\"token function\">git</span> branch <span class=\"token parameter variable\">-d</span> <span class=\"token string\">\"<span class=\"token variable\">$branch</span>\"</span>\n    <span class=\"token keyword\">fi</span>\n<span class=\"token keyword\">done</span></code></pre>\n",
+			"date_published": "2024-11-10T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://rifai.id/blog/2023/1219-prototype-rc-game/",
 			"url": "https://rifai.id/blog/2023/1219-prototype-rc-game/",
 			"title": "Prototype of RC style game",

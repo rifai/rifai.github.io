@@ -17,4 +17,4 @@ https://youtu.be/21YK2ZKx5VA
 **Technology Used** : Unity
 
 **Role** :  
-The game was developed for the educational game-based platform, <https://legendsoflearning.com> as a part of partnertship with Rovio to bring the globally-loved media franchise into the world of education, with me serving as the primary programmer utilizing Unity3D. My colleague and friend, [Crescentyr](https://crescentyr.com), contributed as the designer responsible for crafting assets and gameplay elements. 
+The game was developed for the educational game-based platform, <https://legendsoflearning.com> as a part of partnership with Rovio to bring the globally-loved media franchise into the world of education, with me serving as the primary programmer utilizing Unity3D. My colleague and friend, [Crescentyr](https://crescentyr.com), contributed as the designer responsible for crafting assets and gameplay elements. 

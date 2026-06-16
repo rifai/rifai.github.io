@@ -5,7 +5,7 @@ tags:
   - html5
   - unity3d
 ---
-{% image "screenshots/thumbnail-ctr.png", "screenshot cut the rope"%}
+https://youtu.be/nJlXMjmLZo4
 
 **Description** :  
 "Cut the Rope: Forces and Motion" is an educational game designed to provide an engaging and effective learning experience for students. Students has to deliver the candy to Om Nom using forces like push, pull, and gravity.

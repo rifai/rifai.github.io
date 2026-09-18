@@ -3,12 +3,22 @@
 	
 	<url>
 		<loc>https://rifai.id/games/2013-djamal/</loc>
-		<lastmod>2014-01-01</lastmod>
+		<lastmod>2013-01-01</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/games/2014-garuda-nest-rescue/</loc>
 		<lastmod>2014-01-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://rifai.id/games/2018-bolderline/</loc>
+		<lastmod>2018-01-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://rifai.id/games/2018-where-are-my-pets/</loc>
+		<lastmod>2018-01-01</lastmod>
 	</url>
 	
 	<url>
@@ -22,33 +32,13 @@
 	</url>
 	
 	<url>
-		<loc>https://rifai.id/games/2018-bolderline/</loc>
-		<lastmod>2019-01-01</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://rifai.id/games/2018-where-are-my-pets/</loc>
-		<lastmod>2019-01-01</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://rifai.id/games/2019-she-and-light-bearers/</loc>
 		<lastmod>2019-01-01</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/games/2020-the-alchemist-and-the-fairies/</loc>
-		<lastmod>2019-01-01</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://rifai.id/games/2022-cornfield-defense/</loc>
-		<lastmod>2019-01-01</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://rifai.id/games/2022-queen-gilliants-quest/</loc>
-		<lastmod>2019-01-01</lastmod>
+		<lastmod>2020-01-01</lastmod>
 	</url>
 	
 	<url>
@@ -74,6 +64,16 @@
 	<url>
 		<loc>https://rifai.id/works/meducine/</loc>
 		<lastmod>2021-03-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://rifai.id/games/2022-cornfield-defense/</loc>
+		<lastmod>2022-01-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://rifai.id/games/2022-queen-gilliants-quest/</loc>
+		<lastmod>2022-01-01</lastmod>
 	</url>
 	
 	<url>
@@ -143,121 +143,121 @@
 	
 	<url>
 		<loc>https://rifai.id/about/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/blog/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/games/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/tags/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/tags/another-tag/</loc>
-		<lastmod>2026-07-20</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://rifai.id/tags/second-tag/</loc>
-		<lastmod>2026-07-20</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://rifai.id/tags/posts-with-two-tags/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/tags/number-2/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://rifai.id/tags/second-tag/</loc>
+		<lastmod>2026-09-18</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://rifai.id/tags/posts-with-two-tags/</loc>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/tags/games/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/tags/unity3d/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/tags/android/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/tags/html5/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/tags/haxe/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/tags/works/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/tags/portfolio/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/tags/flutter/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/tags/gamedev/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/tags/webdev/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/tags/windows/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/tags/git/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/tags/godot/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/tags/devlog/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rifai.id/works/</loc>
-		<lastmod>2026-07-20</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 </urlset>

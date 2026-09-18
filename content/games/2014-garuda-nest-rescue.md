@@ -15,8 +15,9 @@ Play as Naradja as you run, jump, and avoid challenging obstacles while throwing
 **Platform** :
 - [Android (deleted)](https://play.google.com/store/apps/details?id=com.DolananGames.NaradjaGNR)
 
-**Technology Used** : 
-- Unity3D 
+**Tech** :
+- Unity (C#)
 
-**Role** :  
-My role as a gameplay programmer within the Unity3D environment encompasses a diverse array of responsibilities. I'm deeply involved in crafting and fine-tuning gameplay features, which includes the development and integration of third-party libraries to enrich the gaming experience. 
+**My Role** : Gameplay Programmer
+
+I built the core gameplay for this Android endless runner in Unity: the running, jumping, obstacles, and food-throwing mechanics, tuned until the game felt fast and responsive. I also integrated the third-party libraries the game needed and the game was published on Google Play. 

@@ -8,13 +8,16 @@ tags:
 https://www.youtube.com/watch?v=pInsvY9Cb_Y
 
 **Description** :  
-"Snakiply" is an educational game designed to provide an engaging and effective learning experience for students. Students has to avoid obstacles, eat the right answers, and grow longer while building fluency with math facts, patterns, and properties.
+Snakiply is an educational game where students steer a snake past obstacles and eat the correct answers to grow longer, building fluency with math facts, patterns, and properties.
 
 **Released** : 2025
 
-**Platform** : HTML5
+**Platform** :
+- HTML5 
 
-**Technology Used** : Unity
+**Tech** :
+- Unity (C#)
 
-**Role** :  
-The game was developed for the educational game-based platform, <https://legendsoflearning.com>, with me serving as the primary programmer utilizing Unity3D. My colleague and friend, [Crescentyr](https://crescentyr.com), contributed as the designer responsible for crafting assets and gameplay elements.
+**My Role** : Lead Programmer
+
+We made Snakiply for [Legends of Learning](https://legendsoflearning.com), a game-based learning platform, to help students build fluency with math facts, patterns, and properties through fast, repeatable play. [Crescentyr](https://crescentyr.com) handled the game design and art, and I programmed the whole game in Unity, from the first prototype to the version released on the platform.

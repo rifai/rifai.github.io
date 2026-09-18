@@ -1,21 +1,22 @@
 ---
 title: Djamal
-date: 2014-01-01
+date: 2013-01-01
 tags:
   - unity3d
 ---
 https://www.youtube.com/watch?v=yVtO8Wbrzg4
 
 **Description** :  
-DJAMAL is an experimental demo game with a point-and-click adventure concept. Djamal was made for local game competition. This game achieved 2nd place in the Animation Game category at the ACFFEST 2013 event organized by KPK
+Djamal is an experimental point-and-click adventure demo, built for a local game competition.
 
 **Released** : 2013
 
 **Platform** :
 - PC
 
-**Technology Used** : 
-- Unity3D 
+**Tech** :
+- Unity (C#)
 
-**Role** :  
-My role as a gameplay programmer within the Unity3D environment encompasses a diverse array of responsibilities. I'm deeply involved in crafting and fine-tuning gameplay features.
+**My Role** : Gameplay Programmer
+
+We made Djamal for ACFFEST 2013 (Anti-Corruption Film Festival), a competition organized by KPK, Indonesia's Corruption Eradication Commission. I was responsible for the gameplay, building and tuning the point-and-click interactions in Unity. The game won **2nd place** in the Animation Game category.

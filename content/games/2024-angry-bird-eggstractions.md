@@ -4,6 +4,11 @@ date: 2024-02-01
 tags:
   - html5
   - unity3d
+featured: 1
+tagline: "Officially licensed Angry Birds game that teaches collisions and forces without losing the slingshot feel."
+role: "Lead Programmer"
+platform: "Web (HTML5)"
+youtubeId: "21YK2ZKx5VA"
 ---
 https://youtu.be/21YK2ZKx5VA
 

@@ -5,6 +5,11 @@ tags:
   - android
   - ios
   - unity3d
+featured: 3
+tagline: "Arena shooter with tank class evolution and an endless grid of arenas, shipped on both stores."
+role: "Lead Programmer"
+platform: "Android · iOS"
+thumbnail: "games/screenshots/thumb_geometry_tank.png"
 ---
 {% image "screenshots/thumb_geometry_tank.png", "Geometry Tank - Dash Adventure screenshot" %}
 

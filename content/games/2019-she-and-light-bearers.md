@@ -4,6 +4,11 @@ description: She and the Light Bearer is a point and click adventure game, a poe
 date: 2019-01-01
 tags:
   - unity3d
+featured: 4
+tagline: "Point and click adventure on Steam — mini-games wired into a Fungus-driven narrative."
+role: "Contract Programmer"
+platform: "Steam"
+youtubeId: "0pxcAQvj-KI"
 ---
 
 https://www.youtube.com/watch?v=0pxcAQvj-KI

@@ -1,0 +1,40 @@
+---
+layout: layouts/base.njk
+bodyClass: wide
+eleventyNavigation:
+  key: Home
+  order: 1
+numberOfLatestPostsToShow: 3
+---
+<section class="hero">
+	<div class="hero-text">
+		<h1>Ahmad Rifai</h1>
+		<p class="hero-positioning">Lead gameplay programmer (Unity, Godot) — shipped titles on mobile, Steam and web.</p>
+		<p class="hero-support">I was lead programmer on the officially licensed <a href="/games/2024-angry-bird-eggstractions/">Angry Birds</a> and <a href="/games/2025-cut-the-rope-force-motion/">Cut the Rope</a> educational games, and on <a href="/games/2026-geometry-tank-dash-adventure/">Geometry Tank</a> for Android and iOS. I also build mobile apps in Flutter and Android.</p>
+		<p class="hero-cta">
+			<a class="btn btn-primary" href="/games/">View games</a>
+			<a class="btn" href="/cv_ahmad_rifai.pdf">Resume (PDF)</a>
+			<a class="btn" href="mailto:{{ metadata.author.email }}">Email me</a>
+		</p>
+	</div>
+	<div class="hero-media">
+		<a class="hero-poster" href="https://youtu.be/21YK2ZKx5VA" aria-label="Watch Angry Birds Eggstraction gameplay on YouTube">
+			<img src="https://img.youtube.com/vi/21YK2ZKx5VA/hqdefault.jpg" width="480" height="360" alt="Angry Birds Eggstraction gameplay still">
+			<span class="hero-play" aria-hidden="true">▶</span>
+		</a>
+		<p class="hero-caption">Angry Birds Eggstraction — gameplay</p>
+	</div>
+</section>
+
+<h2>Featured games</h2>
+{% include "gamecards.njk" %}
+<p><a href="/games/">See all games</a></p>
+
+<h2>Latest posts</h2>
+{%- set postsCount = collections.posts | length %}
+{%- set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+{% include "postslatest.njk" %}
+{%- set morePosts = postsCount - numberOfLatestPostsToShow %}
+{% if morePosts > 0 %}
+<p><a href="/blog/">View all</a></p>
+{% endif %}

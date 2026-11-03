@@ -1,12 +1,12 @@
 module.exports = {
-	title: "Ahmad Rifai | Mobile and Game developer",
+	title: "Ahmad Rifai | Gameplay Programmer (Unity & Godot)",
 	url: "https://rifai.id/",
 	assets: "https://rifai.id/public-assets/",
 	language: "en",
-	description: "Experienced mobile and game developer specializing in Godot Engine, Unity3D, Flutter and Android development. Browse my portfolio and contact me for app/game development projects.",
+	description: "Gameplay programmer working in Unity and Godot. Lead programmer on the officially licensed Angry Birds and Cut the Rope educational games, with shipped releases on mobile, Steam and web, plus mobile app development in Flutter and Android.",
 	author: {
 		name: "Ahmad Rifai",
 		email: "arifai.dev@gmail.com",
-		url: "https://rifai.id/about-me/"
+		url: "https://rifai.id/about/"
 	}
 }

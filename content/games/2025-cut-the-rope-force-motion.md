@@ -4,6 +4,11 @@ date: 2025-10-31
 tags:
   - html5
   - unity3d
+featured: 2
+tagline: "Officially licensed Cut the Rope game built around push, pull and gravity for the classroom."
+role: "Lead Programmer"
+platform: "Web (HTML5)"
+youtubeId: "nJlXMjmLZo4"
 ---
 https://youtu.be/nJlXMjmLZo4
 

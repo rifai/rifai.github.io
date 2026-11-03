@@ -17,14 +17,14 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-		<title>Ahmad Rifai | Mobile and Game developer</title>
+		<title>Ahmad Rifai | Gameplay Programmer (Unity &amp; Godot)</title>
 		
-		<meta name="description" content="Experienced mobile and game developer specializing in Godot Engine, Unity3D, Flutter and Android development. Browse my portfolio and contact me for app/game development projects.">
-		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Ahmad Rifai | Mobile and Game developer">
-		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Ahmad Rifai | Mobile and Game developer">
+		<meta name="description" content="Gameplay programmer working in Unity and Godot. Lead programmer on the officially licensed Angry Birds and Cut the Rope educational games, with shipped releases on mobile, Steam and web, plus mobile app development in Flutter and Android.">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Ahmad Rifai | Gameplay Programmer (Unity &amp; Godot)">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Ahmad Rifai | Gameplay Programmer (Unity &amp; Godot)">
 		<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 		
-		<style>.postlist { counter-reset: start-from 11 }
+		<style>.postlist { counter-reset: start-from 4 }
 * { box-sizing: border-box; }
 /* Defaults */
 :root {
@@ -45,6 +45,12 @@
 	--text-color-link-active: #5f2b48;
 	--text-color-link-visited: #17050F;
 
+	--text-muted: #5a5a5a;
+	--card-border: var(--color-gray-20);
+	--card-bg: #fafafa;
+	--accent: #082840;
+	--accent-text: #fff;
+
 	--syntax-tab-size: 2;
 }
 
@@ -60,6 +66,12 @@
 		--text-color-link-visited: #a6a6f8;
 
 		--background-color: #15202b;
+
+		--text-muted: #9fb0c0;
+		--card-border: #2b3b4b;
+		--card-bg: #1b2936;
+		--accent: #1493fb;
+		--accent-text: #10171e;
 	}
 }
 
@@ -373,9 +385,170 @@ a[href].header-anchor:focus,
 
 h2+.header-anchor {
 	font-size: 1.5em;
+}
+
+/* Wide pages (homepage) */
+body.wide {
+	max-width: 64em;
+}
+
+/* Hero */
+.hero {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	align-items: center;
+	margin-bottom: 2.5rem;
+}
+
+.hero-text {
+	flex: 1 1 22rem;
+}
+
+.hero-text h1 {
+	margin: 0 0 0.25em;
+}
+
+.hero-positioning {
+	margin: 0 0 0.75em;
+	font-size: 1.25rem;
+	font-weight: bold;
+	line-height: 1.3;
+}
+
+.hero-support {
+	margin: 0 0 1.25em;
+}
+
+.hero-cta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	margin: 0;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.6em 1.1em;
+	border: 1px solid var(--card-border);
+	border-radius: 0.3em;
+	line-height: 1.2;
+	text-decoration: none;
+}
+
+.btn-primary {
+	border-color: var(--accent);
+	background-color: var(--accent);
+}
+
+a[href].btn-primary,
+a[href].btn-primary:visited {
+	color: var(--accent-text);
+}
+
+.hero-media {
+	flex: 1 1 18rem;
+	margin: 0;
+}
+
+.hero-poster {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	border: 1px solid var(--card-border);
+	border-radius: 0.3em;
+	aspect-ratio: 16 / 9;
+	text-decoration: none;
+}
+
+.hero-poster img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.hero-play {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 2.75em;
+	height: 2.75em;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	font-size: 1.25rem;
+	line-height: 2.75em;
+	text-align: center;
+}
+
+.hero-caption {
+	margin: 0.5em 0 0;
+	font-size: 0.875rem;
+	color: var(--text-muted);
+}
+
+/* Game cards */
+.gamecards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	gap: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.gamecard {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border: 1px solid var(--card-border);
+	border-radius: 0.3em;
+	background-color: var(--card-bg);
+}
+
+.gamecard-thumb {
+	aspect-ratio: 16 / 9;
+	background-color: var(--card-border);
+}
+
+.gamecard-thumb img,
+.gamecard-thumb picture {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.gamecard-title {
+	margin: 0.75rem 0.9rem 0.35rem;
+	font-size: 1.05rem;
+	line-height: 1.3;
+}
+
+.gamecard-tagline {
+	margin: 0 0.9rem 0.6rem;
+	font-size: 0.9375rem;
+}
+
+.gamecard-meta {
+	margin: auto 0.9rem 0.9rem;
+	padding-top: 0.5rem;
+	font-size: 0.8125rem;
+	color: var(--text-muted);
+}
+
+@media (max-width: 45em) {
+	.hero {
+		gap: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.hero-positioning {
+		font-size: 1.125rem;
+	}
 }</style>
 	</head>
-	<body>
+	<body class="wide">
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
@@ -393,79 +566,96 @@ h2+.header-anchor {
 		</header>
 
 		<main id="skip">
-			<p>Welcome! I'm Ahmad Rifai, a Mobile &amp; Game Developer</p>
-<h1 id="latest-posts" tabindex="-1">Latest Posts <a class="header-anchor" href="#latest-posts">#</a></h1>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2024-11-10">10 Nov
-2024</time>
-<a href="/blog/2024/0928-frequenly-used-git-command/">
-<h2>Git command to remove branches without remote upstream  </h2>
-</a>
-</article></p>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2023-12-19">19 Dec
-2023</time>
-<a href="/blog/2023/1219-prototype-rc-game/">
-<h2>Prototype of RC style game  </h2>
-</a>
-</article></p>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2023-10-22">22 Oct
-2023</time>
-<a href="/blog/2023/1022-using-unity-with-vscode/">
-<h2>Unity Development with Visual Studio Code  </h2>
-</a>
-</article></p>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2023-10-20">20 Oct
-2023</time>
-<a href="/blog/2023/1020-using-godot-with-vscode/">
-<h2>Programming and debugging godot with Visual Studio Code  </h2>
-</a>
-</article></p>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2023-10-18">18 Oct
-2023</time>
-<a href="/blog/2023/1018-devlog-continue-fatastro/">
-<h2>Devlog #1 : Reviving Fat Astro  </h2>
-</a>
-</article></p>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2023-10-14">14 Oct
-2023</time>
-<a href="/blog/2023/1014-third-person-camera-godot/">
-<h2>Third person camera on Godot  </h2>
-</a>
-</article></p>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2023-09-29">29 Sep
-2023</time>
-<a href="/blog/2023/0929-common-git-scenario/">
-<h2>Git scenario 1 : Urgent bug report  </h2>
-</a>
-</article></p>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2023-09-28">28 Sep
-2023</time>
-<a href="/blog/2023/0928-frequenly-used-git-command/">
-<h2>Frequently used git command  </h2>
-</a>
-</article></p>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2023-09-21">21 Sep
-2023</time>
-<a href="/blog/2023/0921-hello-world/">
-<h2>Hello world.  </h2>
-</a>
-</article></p>
-<p><article class="latestpost-item">
-<time class="latestpost-date" datetime="2020-07-04">04 Jul
-2020</time>
-<a href="/blog/2021/0905-fat-astro/">
-<h2>Protoype Demo - Fat Astro  </h2>
-</a>
-</article></p>
+			<section class="hero">
+	<div class="hero-text">
+		<h1>Ahmad Rifai</h1>
+		<p class="hero-positioning">Lead gameplay programmer (Unity, Godot) — shipped titles on mobile, Steam and web.</p>
+		<p class="hero-support">I was lead programmer on the officially licensed <a href="/games/2024-angry-bird-eggstractions/">Angry Birds</a> and <a href="/games/2025-cut-the-rope-force-motion/">Cut the Rope</a> educational games, and on <a href="/games/2026-geometry-tank-dash-adventure/">Geometry Tank</a> for Android and iOS. I also build mobile apps in Flutter and Android.</p>
+		<p class="hero-cta">
+			<a class="btn btn-primary" href="/games/">View games</a>
+			<a class="btn" href="/cv_ahmad_rifai.pdf">Resume (PDF)</a>
+			<a class="btn" href="mailto:arifai.dev@gmail.com">Email me</a>
+		</p>
+	</div>
+	<div class="hero-media">
+		<a class="hero-poster" href="https://youtu.be/21YK2ZKx5VA" aria-label="Watch Angry Birds Eggstraction gameplay on YouTube">
+			<img src="https://img.youtube.com/vi/21YK2ZKx5VA/hqdefault.jpg" width="480" height="360" alt="Angry Birds Eggstraction gameplay still">
+			<span class="hero-play" aria-hidden="true">▶</span>
+		</a>
+		<p class="hero-caption">Angry Birds Eggstraction — gameplay</p>
+	</div>
+</section>
+
+<h2>Featured games</h2>
+
+<div class="gamecards">
+	<article class="gamecard">
+		<div class="gamecard-thumb">
+			<img src="https://img.youtube.com/vi/21YK2ZKx5VA/hqdefault.jpg" width="480" height="360" loading="lazy" decoding="async" alt="Angry Birds Eggstraction gameplay still">
+		</div>
+		<h3 class="gamecard-title"><a href="/games/2024-angry-bird-eggstractions/">Angry Birds Eggstraction</a></h3>
+		<p class="gamecard-tagline">Officially licensed Angry Birds game that teaches collisions and forces without losing the slingshot feel.</p>
+		<p class="gamecard-meta">Lead Programmer · Web (HTML5)</p>
+	</article>
+	<article class="gamecard">
+		<div class="gamecard-thumb">
+			<img src="https://img.youtube.com/vi/nJlXMjmLZo4/hqdefault.jpg" width="480" height="360" loading="lazy" decoding="async" alt="Cut the Rope: Forces and Motion gameplay still">
+		</div>
+		<h3 class="gamecard-title"><a href="/games/2025-cut-the-rope-force-motion/">Cut the Rope: Forces and Motion</a></h3>
+		<p class="gamecard-tagline">Officially licensed Cut the Rope game built around push, pull and gravity for the classroom.</p>
+		<p class="gamecard-meta">Lead Programmer · Web (HTML5)</p>
+	</article>
+	<article class="gamecard">
+		<div class="gamecard-thumb">
+			<picture><source type="image/avif" srcset="/img/1Yzk8jLm-t-480.avif 480w"><source type="image/webp" srcset="/img/1Yzk8jLm-t-480.webp 480w"><img alt="Geometry Tank - Dash Adventure screenshot" loading="lazy" class="img-responsive" decoding="async" src="/img/1Yzk8jLm-t-480.png" width="480" height="269"></picture>
+		</div>
+		<h3 class="gamecard-title"><a href="/games/2026-geometry-tank-dash-adventure/">Geometry Tank - Dash Adventure</a></h3>
+		<p class="gamecard-tagline">Arena shooter with tank class evolution and an endless grid of arenas, shipped on both stores.</p>
+		<p class="gamecard-meta">Lead Programmer · Android · iOS</p>
+	</article>
+	<article class="gamecard">
+		<div class="gamecard-thumb">
+			<img src="https://img.youtube.com/vi/0pxcAQvj-KI/hqdefault.jpg" width="480" height="360" loading="lazy" decoding="async" alt="She and the Light Bearer gameplay still">
+		</div>
+		<h3 class="gamecard-title"><a href="/games/2019-she-and-light-bearers/">She and the Light Bearer</a></h3>
+		<p class="gamecard-tagline">Point and click adventure on Steam — mini-games wired into a Fungus-driven narrative.</p>
+		<p class="gamecard-meta">Contract Programmer · Steam</p>
+	</article>
+</div>
+
+<p><a href="/games/">See all games</a></p>
+
+<h2>Latest posts</h2>
+
+
+	<article class="latestpost-item">
+		<time class="latestpost-date" datetime="2024-11-10">10 Nov
+			2024</time>
+		<a href="/blog/2024/0928-frequenly-used-git-command/">
+			<h2>Git command to remove branches without remote upstream  </h2>
+		</a>
+	</article>
+
+	<article class="latestpost-item">
+		<time class="latestpost-date" datetime="2023-12-19">19 Dec
+			2023</time>
+		<a href="/blog/2023/1219-prototype-rc-game/">
+			<h2>Prototype of RC style game  </h2>
+		</a>
+	</article>
+
+	<article class="latestpost-item">
+		<time class="latestpost-date" datetime="2023-10-22">22 Oct
+			2023</time>
+		<a href="/blog/2023/1022-using-unity-with-vscode/">
+			<h2>Unity Development with Visual Studio Code  </h2>
+		</a>
+	</article>
+
+
+
 <p><a href="/blog/">View all</a></p>
+
 
 		</main>
 

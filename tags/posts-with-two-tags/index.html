@@ -17,11 +17,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-		<title>Tagged “posts with two tags” - Ahmad Rifai | Mobile and Game developer</title>
+		<title>Tagged “posts with two tags” - Ahmad Rifai | Gameplay Programmer (Unity &amp; Godot)</title>
 		
-		<meta name="description" content="Experienced mobile and game developer specializing in Godot Engine, Unity3D, Flutter and Android development. Browse my portfolio and contact me for app/game development projects.">
-		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Ahmad Rifai | Mobile and Game developer">
-		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Ahmad Rifai | Mobile and Game developer">
+		<meta name="description" content="Gameplay programmer working in Unity and Godot. Lead programmer on the officially licensed Angry Birds and Cut the Rope educational games, with shipped releases on mobile, Steam and web, plus mobile app development in Flutter and Android.">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Ahmad Rifai | Gameplay Programmer (Unity &amp; Godot)">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Ahmad Rifai | Gameplay Programmer (Unity &amp; Godot)">
 		<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 		
 		<style>.postlist { counter-reset: start-from 1 }
@@ -45,6 +45,12 @@
 	--text-color-link-active: #5f2b48;
 	--text-color-link-visited: #17050F;
 
+	--text-muted: #5a5a5a;
+	--card-border: var(--color-gray-20);
+	--card-bg: #fafafa;
+	--accent: #082840;
+	--accent-text: #fff;
+
 	--syntax-tab-size: 2;
 }
 
@@ -60,6 +66,12 @@
 		--text-color-link-visited: #a6a6f8;
 
 		--background-color: #15202b;
+
+		--text-muted: #9fb0c0;
+		--card-border: #2b3b4b;
+		--card-bg: #1b2936;
+		--accent: #1493fb;
+		--accent-text: #10171e;
 	}
 }
 
@@ -373,9 +385,170 @@ a[href].header-anchor:focus,
 
 h2+.header-anchor {
 	font-size: 1.5em;
+}
+
+/* Wide pages (homepage) */
+body.wide {
+	max-width: 64em;
+}
+
+/* Hero */
+.hero {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	align-items: center;
+	margin-bottom: 2.5rem;
+}
+
+.hero-text {
+	flex: 1 1 22rem;
+}
+
+.hero-text h1 {
+	margin: 0 0 0.25em;
+}
+
+.hero-positioning {
+	margin: 0 0 0.75em;
+	font-size: 1.25rem;
+	font-weight: bold;
+	line-height: 1.3;
+}
+
+.hero-support {
+	margin: 0 0 1.25em;
+}
+
+.hero-cta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	margin: 0;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.6em 1.1em;
+	border: 1px solid var(--card-border);
+	border-radius: 0.3em;
+	line-height: 1.2;
+	text-decoration: none;
+}
+
+.btn-primary {
+	border-color: var(--accent);
+	background-color: var(--accent);
+}
+
+a[href].btn-primary,
+a[href].btn-primary:visited {
+	color: var(--accent-text);
+}
+
+.hero-media {
+	flex: 1 1 18rem;
+	margin: 0;
+}
+
+.hero-poster {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	border: 1px solid var(--card-border);
+	border-radius: 0.3em;
+	aspect-ratio: 16 / 9;
+	text-decoration: none;
+}
+
+.hero-poster img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.hero-play {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 2.75em;
+	height: 2.75em;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	font-size: 1.25rem;
+	line-height: 2.75em;
+	text-align: center;
+}
+
+.hero-caption {
+	margin: 0.5em 0 0;
+	font-size: 0.875rem;
+	color: var(--text-muted);
+}
+
+/* Game cards */
+.gamecards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	gap: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.gamecard {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border: 1px solid var(--card-border);
+	border-radius: 0.3em;
+	background-color: var(--card-bg);
+}
+
+.gamecard-thumb {
+	aspect-ratio: 16 / 9;
+	background-color: var(--card-border);
+}
+
+.gamecard-thumb img,
+.gamecard-thumb picture {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.gamecard-title {
+	margin: 0.75rem 0.9rem 0.35rem;
+	font-size: 1.05rem;
+	line-height: 1.3;
+}
+
+.gamecard-tagline {
+	margin: 0 0.9rem 0.6rem;
+	font-size: 0.9375rem;
+}
+
+.gamecard-meta {
+	margin: auto 0.9rem 0.9rem;
+	padding-top: 0.5rem;
+	font-size: 0.8125rem;
+	color: var(--text-muted);
+}
+
+@media (max-width: 45em) {
+	.hero {
+		gap: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.hero-positioning {
+		font-size: 1.125rem;
+	}
 }</style>
 	</head>
-	<body>
+	<body class="">
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>

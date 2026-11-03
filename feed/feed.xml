@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
-	<title>Ahmad Rifai | Mobile and Game developer</title>
-	<subtitle>Experienced mobile and game developer specializing in Godot Engine, Unity3D, Flutter and Android development. Browse my portfolio and contact me for app/game development projects.</subtitle>
+	<title>Ahmad Rifai | Gameplay Programmer (Unity &amp; Godot)</title>
+	<subtitle>Gameplay programmer working in Unity and Godot. Lead programmer on the officially licensed Angry Birds and Cut the Rope educational games, with shipped releases on mobile, Steam and web, plus mobile app development in Flutter and Android.</subtitle>
 	<link href="https://rifai.id/feed/feed.xml" rel="self"/>
 	<link href="https://rifai.id/"/>
 	<updated>2024-11-10T00:00:00Z</updated>

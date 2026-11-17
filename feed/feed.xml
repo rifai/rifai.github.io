@@ -4,12 +4,29 @@
 	<subtitle>Gameplay programmer working in Unity and Godot. Lead programmer on the officially licensed Angry Birds and Cut the Rope educational games, with shipped releases on mobile, Steam and web, plus mobile app development in Flutter and Android.</subtitle>
 	<link href="https://rifai.id/feed/feed.xml" rel="self"/>
 	<link href="https://rifai.id/"/>
-	<updated>2024-11-10T00:00:00Z</updated>
+	<updated>2026-11-17T00:00:00Z</updated>
 	<id>https://rifai.id/</id>
 	<author>
 		<name>Ahmad Rifai</name>
 		<email>arifai.dev@gmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Alino: Block Fill</title>
+		<link href="https://rifai.id/blog/2026/1117-alino-block-fill/"/>
+		<updated>2026-11-17T00:00:00Z</updated>
+		<id>https://rifai.id/blog/2026/1117-alino-block-fill/</id>
+		<content type="html">&lt;p&gt;Alino: Block Fill started with one of my daughter&#39;s toys. I liked the idea of turning it into a small game, so I built my own take on it.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://rifai.id/img/jrhvrqzfur-990.avif 990w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://rifai.id/img/jrhvrqzfur-990.webp 990w&quot;&gt;&lt;img alt=&quot;The toy that inspired Alino: Block Fill&quot; loading=&quot;lazy&quot; class=&quot;img-responsive&quot; decoding=&quot;async&quot; src=&quot;https://rifai.id/img/jrhvrqzfur-990.png&quot; width=&quot;990&quot; height=&quot;1308&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;I made the game with Godot in a week, with AI assistance from Claude.&lt;/p&gt;
+&lt;p&gt;Here&#39;s a bit of gameplay:&lt;/p&gt;
+&lt;video controls=&quot;&quot; preload=&quot;metadata&quot; playsinline=&quot;&quot;&gt;
+    &lt;source src=&quot;https://rifai.id/games/screenshots/alino.webm&quot; type=&quot;video/webm&quot;&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;p&gt;You can play Alino: Block Fill on &lt;a href=&quot;https://rifai.itch.io/alino&quot;&gt;itch.io&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Git command to remove branches without remote upstream</title>

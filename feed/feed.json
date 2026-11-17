@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://rifai.id/blog/2026/1117-alino-block-fill/",
+			"url": "https://rifai.id/blog/2026/1117-alino-block-fill/",
+			"title": "Alino: Block Fill",
+			"content_html": "<p>Alino: Block Fill started with one of my daughter's toys. I liked the idea of turning it into a small game, so I built my own take on it.</p>\n<p><picture><source type=\"image/avif\" srcset=\"https://rifai.id/img/jrhvrqzfur-990.avif 990w\"><source type=\"image/webp\" srcset=\"https://rifai.id/img/jrhvrqzfur-990.webp 990w\"><img alt=\"The toy that inspired Alino: Block Fill\" loading=\"lazy\" class=\"img-responsive\" decoding=\"async\" src=\"https://rifai.id/img/jrhvrqzfur-990.png\" width=\"990\" height=\"1308\"></picture></p>\n<p>I made the game with Godot in a week, with AI assistance from Claude.</p>\n<p>Here's a bit of gameplay:</p>\n<video controls=\"\" preload=\"metadata\" playsinline=\"\">\n    <source src=\"https://rifai.id/games/screenshots/alino.webm\" type=\"video/webm\">\n    Your browser does not support the video tag.\n</video>\n<p>You can play Alino: Block Fill on <a href=\"https://rifai.itch.io/alino\">itch.io</a>.</p>\n",
+			"date_published": "2026-11-17T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://rifai.id/blog/2024/0928-frequenly-used-git-command/",
 			"url": "https://rifai.id/blog/2024/0928-frequenly-used-git-command/",
 			"title": "Git command to remove branches without remote upstream",
